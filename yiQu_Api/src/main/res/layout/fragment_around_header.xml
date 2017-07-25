@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@null"
+              android:orientation="vertical">
+
+    <!--banber宣传-->
+    <com.bigkoo.convenientbanner.ConvenientBanner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#f2f2f2"
+        app:canLoop="true"/>
+
+    <ImageView
+        android:id="@+id/ivBanner"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:visibility="gone"/>
+
+    <!--全网优惠卷-->
+    <RelativeLayout
+        android:id="@+id/rlBusiness"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:paddingRight="15dp"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/TextView_style"
+            android:layout_width="match_parent"
+            android:layout_marginTop="7.5dp"
+            android:background="@color/white"
+            android:gravity="start"
+            android:paddingLeft="15dp"
+            android:text="全网优惠券"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="7.5dp"
+            android:text="显示全部"
+            android:textColor="@color/text_color_979797"
+            android:textSize="10.5sp"
+            />
+
+        <ImageView
+            android:layout_width="5dp"
+            android:layout_height="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_arrow_right"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewBusiness"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingRight="12dp"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+    <!--周边优惠券-->
+    <RelativeLayout
+        android:id="@+id/rlAround"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:paddingRight="15dp"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/TextView_style"
+            android:layout_width="match_parent"
+            android:layout_marginTop="7.5dp"
+            android:background="@color/white"
+            android:gravity="start"
+            android:paddingLeft="15dp"
+            android:text="周边优惠券"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="7.5dp"
+            android:text="显示全部"
+            android:textColor="@color/text_color_979797"
+            android:textSize="10.5sp"
+            />
+
+        <ImageView
+            android:layout_width="5dp"
+            android:layout_height="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_arrow_right"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewAround"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingRight="12dp"
+        android:visibility="gone"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:scrollbars="none"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <GridView
+                android:id="@+id/gridViewAround"
+                android:layout_width="match_parent"
+                android:layout_height="77.5dp"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="auto_fit"
+                android:stretchMode="spacingWidthUniform"></GridView>
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>

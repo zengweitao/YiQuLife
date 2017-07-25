@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:orientation="vertical"
+              android:paddingLeft="40dp"
+              android:paddingRight="40dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageViewAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@drawable/bg_answer_right"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                tools:text="回答正确"
+                />
+
+            <TextView
+                android:id="@+id/textViewPoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                tools:text="本次获得10积分"
+                />
+
+            <TextView
+                android:id="@+id/textViewChanges"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                tools:text="本月还有9次答题获得积分机会"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/buttonOK"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@drawable/lucky_bag_btn_bg"
+        android:text="好的"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearWrongAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buttonChangeBag"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/white"
+            android:text="立刻取袋"
+            android:textColor="@color/theme"
+            android:textSize="17sp"
+            android:visibility="gone"
+            />
+
+        <include layout="@layout/view_cutting_line_1px"></include>
+
+        <Button
+            android:id="@+id/buttonGoAhead"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/white"
+            android:text="继续答题"
+            android:textColor="@color/theme"
+            android:textSize="17sp"
+            />
+
+        <include layout="@layout/view_cutting_line_1px"></include>
+
+        <Button
+            android:id="@+id/buttonQuite"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@drawable/bg_btn_bottom_4dp"
+            android:text="退出答题"
+            android:textColor="@color/text_color_979797"
+            android:textSize="17sp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

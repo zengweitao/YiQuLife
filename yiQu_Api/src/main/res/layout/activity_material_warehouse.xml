@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical"
+    tools:context="com.quanmai.yiqu.ui.mys.handwork.MaterialWarehouseActivity">
+
+    <include layout="@layout/common_title_view"></include>
+
+    <!--物料详情-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="5dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@color/color_FF776D"
+            />
+
+        <TextView
+            style="@style/TextView_style"
+            android:layout_marginLeft="25dp"
+            android:text="物料详情"
+            android:textColor="@color/text_color_979797"
+            />
+
+        <include layout="@layout/view_cutting_line_bottom_1px"></include>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tvMaterialCode"
+            style="@style/TextView_style"
+            android:layout_centerVertical="false"
+            android:textSize="17sp"
+            tools:text="物料编码：2198239187"
+            />
+
+        <TextView
+            android:id="@+id/tvMaterialType"
+            style="@style/TextView_style"
+            android:layout_below="@+id/tvMaterialCode"
+            android:layout_centerVertical="false"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/text_color_979797"
+            android:textSize="14sp"
+            tools:text="物料数量：可回收环保袋"
+            />
+
+        <TextView
+            android:id="@+id/tvMaterialNum"
+            style="@style/TextView_style"
+            android:layout_below="@+id/tvMaterialType"
+            android:layout_centerVertical="false"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/text_color_979797"
+            android:textSize="14sp"
+            tools:text="物料数量：30只"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            >
+
+            <ImageView
+                android:id="@+id/imgQRCode"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_qr_code"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgQRCode"
+                android:layout_centerHorizontal="true"
+                android:text="重扫"
+                android:textColor="@color/text_color_default"
+                android:textSize="12sp"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/view_cutting_line_1px"></include>
+
+
+    <!--接收详情-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="5dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@color/color_02AFF3"
+            />
+
+        <TextView
+            style="@style/TextView_style"
+            android:layout_marginLeft="25dp"
+            android:text="接收详情"
+            android:textColor="@color/text_color_979797"
+            />
+
+        <include layout="@layout/view_cutting_line_bottom_1px"></include>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tvReceiver"
+            style="@style/TextView_style"
+            android:layout_below="@+id/tvReceiveCommunity"
+            android:layout_centerVertical="false"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/text_color_979797"
+            android:textSize="14sp"
+            tools:text="接收人：彭国华"
+            />
+
+        <TextView
+            android:id="@+id/tvReceiveCommunity"
+            style="@style/TextView_style"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:textSize="17sp"
+            tools:text="接收小区：丽江花园"/>
+    </RelativeLayout>
+
+    <include layout="@layout/view_cutting_line_1px"></include>
+
+    <!--送货员信息-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="5dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@color/color_02AFF3"
+            />
+
+        <TextView
+            style="@style/TextView_style"
+            android:layout_marginLeft="25dp"
+            android:text="送货员信息"
+            android:textColor="@color/text_color_979797"
+            />
+
+        <include layout="@layout/view_cutting_line_bottom_1px"></include>
+    </RelativeLayout>
+    <!--送货单位-->
+    <LinearLayout
+        android:id="@+id/llUnit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            style="@style/TextView_style"
+            android:layout_gravity="start"
+            android:text="送货单位"
+            />
+
+        <TextView
+            android:id="@+id/tvUnit"
+            style="@style/TextView_style"
+            android:layout_marginLeft="7.5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:hint="选择送货单位"
+            android:singleLine="false"
+            android:textColor="@color/text_color_B4B4B4"
+            />
+
+        <ImageView
+            android:layout_width="7dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_arrow_right"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="15dp"
+        android:background="@color/text_color_cdcdcd"></View>
+
+    <!--姓名-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            style="@style/TextView_style"
+            android:layout_gravity="start"
+            android:text="姓名"
+            />
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="38.5dp"
+            android:background="@null"
+            android:hint="输入送货员姓名"
+            android:singleLine="false"
+            android:textColor="@color/text_color_default"
+            android:textColorHint="@color/text_color_B4B4B4"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="15dp"
+        android:background="@color/text_color_cdcdcd"></View>
+
+    <!--手机号-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            style="@style/TextView_style"
+            android:layout_gravity="start"
+            android:text="手机号"
+            />
+
+        <EditText
+            android:id="@+id/editPhoneNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:background="@null"
+            android:hint="输入送货员电话（必填）"
+            android:singleLine="false"
+            android:textColor="@color/text_color_default"
+            android:textColorHint="@color/text_color_B4B4B4"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+
+    <include layout="@layout/view_cutting_line_1px"></include>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnConfirm"
+            style="@style/Button_Style"
+            android:layout_alignParentBottom="true"
+            android:text="确认入库"
+            />
+    </RelativeLayout>
+</LinearLayout>

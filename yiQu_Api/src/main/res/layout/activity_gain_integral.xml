@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_default"
+    tools:context="com.quanmai.yiqu.ui.fuli.GainIntegralActivity">
+
+    <include layout="@layout/common_title_view"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="44dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--顶部banner-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <com.quanmai.yiqu.common.widget.CircularImageView
+                    android:id="@+id/imgAdvertisement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/personal_bg"
+                    app:circular_is_keep_radio="true"
+                    app:circular_radius="4dp"
+                    app:circular_type="round"
+                    tools:background="@drawable/personal_bg"
+                    />
+
+                <TextView
+                    android:id="@+id/tvDetail"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/bg_view_detail"
+                    android:gravity="center"
+                    android:text="点击查看详情"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    />
+            </RelativeLayout>
+
+            <!--分割线-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/ic_star_divider_line"
+                ></View>
+
+            <!--题目-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/tvChoiceType"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="[单选]"
+                    android:textColor="@color/text_color_02AFF3"
+                    android:textSize="12sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tvQuestion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/tvChoiceType"
+                    android:maxLines="3"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    tools:text="如图所示，Air Jordan5 多少元起？"
+                    />
+            </RelativeLayout>
+
+            <!--图片选题-->
+            <LinearLayout
+                android:id="@+id/llChoicePic"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginTop="15dp"
+                android:divider="@drawable/spacer_medium"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:showDividers="middle"
+                android:visibility="gone"
+                >
+
+                <include layout="@layout/item_choice_picture"></include>
+
+                <include layout="@layout/item_choice_picture"></include>
+
+                <include layout="@layout/item_choice_picture"></include>
+
+            </LinearLayout>
+
+            <!--文字选题-->
+            <LinearLayout
+                android:id="@+id/llChoiceText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:divider="@drawable/spacer_medium"
+                android:orientation="vertical"
+                android:showDividers="middle"
+                >
+
+                <include layout="@layout/item_choice_text"></include>
+
+                <include layout="@layout/item_choice_text"></include>
+
+                <include layout="@layout/item_choice_text"></include>
+
+            </LinearLayout>
+
+            <!--确定按钮-->
+            <Button
+                android:id="@+id/btnConfirmAnswer"
+                style="@style/Button_Style"
+                android:layout_width="190dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_btn_theme_color_half_round"
+                android:gravity="center"
+                android:text="确认答案"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:visibility="gone"
+                />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/imgAdvertisementBottom"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="47dp"
+                >
+
+                <!--<TextView-->
+                <!--android:id="@+id/tvAdName"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginRight="5dp"-->
+                <!--android:text="酷动城"-->
+                <!--android:textColor="@color/text_color_157EFB"-->
+                <!--android:textSize="15sp"/>-->
+
+                <TextView
+                    android:id="@+id/tvExplain"
+                    style="@style/TextView_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="答对即送10积分"
+                    android:textColor="@color/text_color_808080"
+                    android:textSize="15sp"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!--&lt;!&ndash;底部广告&ndash;&gt;-->
+    <!--<ImageView-->
+    <!--android:id="@+id/imgAdvertisementBottom"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="55dp"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--tools:background="@drawable/personal_bg"/>-->
+
+</RelativeLayout>

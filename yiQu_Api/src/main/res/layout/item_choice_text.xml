@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:tools="http://schemas.android.com/tools"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+    <com.quanmai.yiqu.common.widget.CheckableRelativeLayout
+        android:layout_width="305dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bg_btn_white_half_round"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/tvOptionNo"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2.5dp"
+            android:background="@drawable/bg_circle_gray"
+            android:gravity="center"
+            android:textColor="@color/text_color_default"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            tools:text="A"
+            />
+
+        <TextView
+            android:id="@+id/tvOptionContent"
+            style="@style/TextView_style"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="40dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:singleLine="false"
+            android:textSize="18sp"
+            tools:text="799起799起799起799起"
+            />
+
+        <ImageView
+            android:id="@+id/imgRight"
+            android:layout_width="23dp"
+            android:layout_height="14.5dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/ic_right_choice_text"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/imgWrong"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="18dp"
+            android:background="@drawable/ic_wrong_choice_text"
+            android:visibility="gone"
+            />
+
+
+    </com.quanmai.yiqu.common.widget.CheckableRelativeLayout>
+
+</merge>

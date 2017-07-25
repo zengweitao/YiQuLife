@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_default"
+    android:orientation="vertical"
+    tools:context="com.quanmai.yiqu.ui.recycle.RecycleOrderDetailActivity">
+
+    <include layout="@layout/common_title_view"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        >
+
+        <TextView
+            android:id="@+id/tvOrderStatus"
+            style="@style/TextView_style"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1"
+            android:textColor="@color/text_color_default"
+            tools:text="已回收"
+            />
+
+        <TextView
+            android:id="@+id/tvFinishedDate"
+            style="@style/TextView_style"
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="7dp"
+            android:textColor="@color/text_color_979797"
+            tools:text="2016.04.22 10:30~12:30"
+            />
+    </LinearLayout>
+
+    <include layout="@layout/view_cutting_line_1px"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        >
+
+        <TextView
+            style="@style/TextView_style"
+            android:text="预约收取时间"
+            />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="108.5dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/text_color_cdcdcd"
+            ></View>
+
+        <TextView
+            android:id="@+id/tvAppointmentDate"
+            style="@style/TextView_style"
+            android:layout_marginLeft="119.5dp"
+            android:singleLine="true"
+            android:textColor="@color/text_color_979797"
+            tools:text="2016.04.22 10:30~12:30"
+            />
+    </RelativeLayout>
+
+    <include layout="@layout/view_cutting_line_1px"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        >
+
+        <TextView
+            style="@style/TextView_style"
+            android:text="预约人"
+            />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="108.5dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/text_color_cdcdcd"
+            ></View>
+
+        <TextView
+            android:id="@+id/tvUserName"
+            style="@style/TextView_style"
+            android:layout_marginLeft="119.5dp"
+            android:singleLine="true"
+            android:textColor="@color/text_color_979797"
+            tools:text="张先生"
+            />
+    </RelativeLayout>
+
+    <include layout="@layout/view_cutting_line_1px"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        >
+
+        <TextView
+            style="@style/TextView_style"
+            android:text="联系电话"
+            />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="108.5dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/text_color_cdcdcd"
+            ></View>
+
+        <TextView
+            android:id="@+id/tvPhoneNum"
+            style="@style/TextView_style"
+            android:layout_marginLeft="119.5dp"
+            android:singleLine="true"
+            android:textColor="@color/text_color_4a90e2"
+            tools:text="12345678901"
+            />
+    </RelativeLayout>
+
+    <include layout="@layout/view_cutting_line_1px"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="12.5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="12.5dp"
+        >
+
+        <TextView
+            style="@style/TextView_style"
+            android:text="收取地址"
+            />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/tvAddress"
+            android:layout_alignTop="@+id/tvAddress"
+            android:layout_marginLeft="108.5dp"
+            android:background="@color/text_color_cdcdcd"
+            ></View>
+
+        <TextView
+            android:id="@+id/tvAddress"
+            style="@style/TextView_style"
+            android:layout_marginLeft="119.5dp"
+            android:maxLines="5"
+            android:singleLine="false"
+            android:textColor="@color/text_color_979797"
+            tools:text="广州市番禺区市桥桥南西路雅居乐城南原著8栋1103"
+            />
+    </RelativeLayout>
+
+    <include layout="@layout/view_cutting_line_1px"></include>
+
+
+    <RelativeLayout
+        android:id="@+id/rlGainPoint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="14dp"
+        android:visibility="gone"
+        >
+
+        <TextView
+            style="@style/TextView_style"
+            android:text="赠送益币 "
+            />
+
+        <TextView
+            android:id="@+id/tvGainPoint"
+            style="@style/TextView_style"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="119.5dp"
+            android:singleLine="true"
+            android:textColor="@color/text_color_979797"
+            tools:text="95益币"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlCuttingLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:visibility="gone"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@drawable/dotted_line_gray"
+            android:layerType="software"
+            ></View>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llRecycleInfoList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        >
+    </LinearLayout>
+</LinearLayout>

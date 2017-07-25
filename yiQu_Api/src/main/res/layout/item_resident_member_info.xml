@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/RelativeLayout_base_style"
+        android:layout_height="44dp"
+        android:descendantFocusability="afterDescendants"
+        android:paddingBottom="0dp"
+        android:paddingRight="0dp"
+        >
+
+        <TextView
+            android:id="@+id/tvMemberName"
+            style="@style/TextView_style"
+            android:maxWidth="70dp"
+            tools:text="陆自力"
+            />
+
+        <TextView
+            android:id="@+id/tvMemberPhone"
+            style="@style/TextView_style"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="33dp"
+            tools:text="180****4635"
+            />
+
+        <TextView
+            android:id="@+id/tvMaster"
+            style="@style/TextView_style"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:text="户主"
+            android:textColor="@color/text_color_979797"
+            android:visibility="gone"
+            />
+
+        <ImageButton
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@drawable/ic_delete"
+            android:visibility="gone"
+            ></ImageButton>
+
+        <include layout="@layout/view_cutting_line_bottom_1px"></include>
+    </RelativeLayout>
+</RelativeLayout>

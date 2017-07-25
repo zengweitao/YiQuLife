@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/mainLayout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        >
+
+        <ImageView
+            android:id="@+id/imgIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            tools:background="@drawable/ic_repair"
+            />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:textColor="@color/text_color_default"
+            android:textSize="15sp"
+            tools:text="家电维修"
+            />
+
+        <TextView
+            android:id="@+id/tvRemarks"
+            android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:layout_marginTop="33.5dp"
+            android:textColor="@color/text_color_979797"
+            android:textSize="12sp"
+            tools:text="电器维修服务"
+            />
+
+        <include
+            layout="@layout/view_cutting_line_1px"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            ></include>
+
+        <View
+            android:background="@color/text_color_cdcdcd"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            ></View>
+    </RelativeLayout>
+
+
+</RelativeLayout>

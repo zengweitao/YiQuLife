@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#56000000"
+    android:orientation="vertical"
+    android:id="@+id/linearContent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:background="#f2f2f2"
+            android:cacheColorHint="@color/no_color"
+            android:divider="@null"
+            android:scrollbars="none" >
+        </ListView>
+
+        <ListView
+            android:id="@+id/listView2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:cacheColorHint="@color/no_color"
+            android:divider="@null"
+            android:scrollbars="none" >
+        </ListView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeBottom"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#ffffff"
+        android:layout_marginBottom="70dp"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#cdcdcd"
+            />
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="7dp"
+            android:background="@drawable/icon_arrow_top"
+            android:layout_centerInParent="true"
+            />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

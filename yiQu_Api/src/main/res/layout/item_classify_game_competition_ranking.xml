@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relative_classify_game_ranking_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100"
+        android:layout_marginBottom="@dimen/y5"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/linearLayout_ranking"
+            android:layout_width="@dimen/x160"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/x31">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NO."
+                android:textColor="#e7c420"
+                android:textSize="@dimen/y34" />
+
+            <TextView
+                android:id="@+id/textview_ranking_game"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:textColor="#e7c420"
+                android:textSize="@dimen/y34" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_toEndOf="@+id/linearLayout_ranking"
+            android:layout_toRightOf="@+id/linearLayout_ranking"
+            android:orientation="horizontal">
+
+            <com.quanmai.yiqu.common.widget.XCRoundImageView
+                android:id="@+id/imageView_user_game"
+                android:layout_width="@dimen/x80"
+                android:layout_height="@dimen/y80"
+                android:scaleType="centerCrop" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/linearLayout_ranking"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/x60"
+            android:layout_toEndOf="@+id/linearLayout2"
+            android:layout_toRightOf="@+id/linearLayout2"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout3">
+
+            <TextView
+                android:id="@+id/textview_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxEms="6"
+                android:singleLine="true"
+                android:text="哆啦梦和"
+                android:textColor="#333333"
+                android:textSize="@dimen/y30" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/x220"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="@dimen/x50"
+                android:layout_height="@dimen/y50"
+                android:src="@drawable/ic_score" />
+
+            <TextView
+                android:id="@+id/textview_score_game"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="2300"
+                android:textColor="#e7c420"
+                android:textSize="@dimen/y30"
+                android:layout_marginLeft="@dimen/x12"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y7" />-->
+</LinearLayout>

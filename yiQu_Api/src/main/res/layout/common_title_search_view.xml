@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:background="@color/theme" >
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_btn_transparent"
+        android:onClick="finish"
+        android:padding="13dp"
+        android:src="@drawable/arrow_left_white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/bg_white_radius_15dp" >
+
+        <EditText
+            android:id="@+id/et_search_content"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:hint="请输入关键字搜索"
+            android:imeOptions="actionSearch"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="#6c6c6c"
+            android:textColorHint="#b8b8b8"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iv_clear"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:padding="7dp"
+            android:src="@drawable/icon_clear" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_search"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_gravity="right"
+        android:background="@drawable/bg_btn_transparent"
+        android:padding="13dp"
+        android:src="@drawable/icon_seach_0" />
+
+</FrameLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/bg_default"
+              android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="171dp"
+        android:background="@drawable/personal_bg"
+        >
+
+        <com.quanmai.yiqu.common.widget.XCRoundImageView
+            android:id="@+id/imageViewHeadPortrait"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5.5dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="105dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            tools:text="大菠萝"
+            />
+
+        <ImageView
+            android:id="@+id/imageViewLevel"
+            android:layout_width="23dp"
+            android:layout_height="12dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="132.5dp"
+            tools:background="@drawable/level_one"
+            />
+    </RelativeLayout>
+
+    <include layout="@layout/view_cutting_line_1px"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="5dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/ic_rectangle_green"
+            />
+
+        <TextView
+            style="@style/TextView_style"
+            android:layout_marginLeft="5dp"
+            android:text="他的发布"
+            android:textSize="15sp"
+            />
+    </LinearLayout>
+
+    <include layout="@layout/view_cutting_line_1px"></include>
+
+</LinearLayout>

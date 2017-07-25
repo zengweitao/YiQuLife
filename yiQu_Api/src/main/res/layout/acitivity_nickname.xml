@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#e5e7ea"
+              android:orientation="vertical">
+
+    <include layout="@layout/common_title_view"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="#dcdcdc"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="昵称"
+            android:padding="15dp"
+            android:textColor="#252525"
+            android:textSize="16sp"
+            />
+
+        <EditText
+            android:id="@+id/et_nickname"
+            style="@style/EditText_Style"
+            android:ellipsize="end"
+            android:hint="请输入您的昵称"
+            android:selectAllOnFocus="true"
+            android:textColor="#686868"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dcdcdc"/>
+
+</LinearLayout>

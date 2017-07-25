@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeItem"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#f2f2f2"
+        >
+
+        <View
+            android:id="@+id/greenLine"
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#48c299"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="回收热门"
+            android:textSize="16sp"
+            android:textColor="#979797"
+            android:layout_centerInParent="true"
+            />
+        <ImageView
+            android:id="@+id/imageview_show_ishave"
+            android:layout_width="@dimen/x22"
+            android:layout_height="@dimen/x22"
+            android:background="@drawable/bg_dor_f08e1b"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x16"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#cdcdcd"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

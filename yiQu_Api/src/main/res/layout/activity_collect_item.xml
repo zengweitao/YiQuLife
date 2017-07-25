@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/relativeItem"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+
+    <LinearLayout
+        android:id="@+id/llMain"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        >
+
+        <ImageView
+            android:id="@+id/ivPicture"
+            android:layout_width="120dp"
+            android:layout_height="85dp"
+            android:background="#f2f2f2"
+            android:scaleType="centerCrop"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="5dp"
+            >
+
+            <TextView
+                android:id="@+id/tvIntroduce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:paddingRight="10dp"
+                android:text="自用iPhone6 港版64g 还有一个多月保修 八成新"
+                android:textColor="@color/text_color_default"
+                android:textSize="15sp"
+                />
+
+            <TextView
+                android:id="@+id/tvPublishDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tvAccessesTimes"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/text_color_hint"
+                android:textSize="12sp"
+                tools:text="发布于2016.03.18"
+                />
+
+            <TextView
+                android:id="@+id/tvAccessesTimes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:singleLine="true"
+                android:text="浏览 5 次"
+                android:textColor="@color/text_color_hint"
+                android:textSize="12sp"
+                />
+
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="55dp"
+                android:layout_height="25dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bg_btn_red_stroke"
+                android:text="删除"
+                android:textColor="@color/text_color_fe5236"
+                android:textSize="12sp"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/ll"
+        android:background="#cdcdcd"
+        />
+
+
+</RelativeLayout>

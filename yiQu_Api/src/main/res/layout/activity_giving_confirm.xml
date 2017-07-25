@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_giving_confirm"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical"
+   >
+
+    <include layout="@layout/common_title_view"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            style="@style/TextView_style"
+            android:layout_gravity="start"
+            android:text="赠送详情"
+            android:textColor="@color/theme"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="10dp"
+            android:background="@color/text_color_cdcdcd"></View>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                style="@style/TextView_style"
+                android:layout_gravity="start"
+                android:text="礼品名称"
+                android:textColor="@color/text_color_979797"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvGiftName"
+                style="@style/TextView_style"
+                android:layout_gravity="start"
+                android:layout_marginLeft="75dp"
+                android:textSize="15sp"
+                tools:text="垃圾桶" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                style="@style/TextView_style"
+                android:layout_gravity="start"
+                android:text="礼品价格"
+                android:textColor="@color/text_color_979797"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvGiftPrice"
+                style="@style/TextView_style"
+                android:layout_gravity="start"
+                android:layout_marginLeft="75dp"
+                android:textSize="15sp"
+                tools:text="60￥" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                style="@style/TextView_style"
+                android:layout_gravity="start"
+                android:text="赠送帐号"
+                android:layout_centerVertical="false"
+                android:textColor="@color/text_color_979797"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvGiftUser"
+                style="@style/TextView_style"
+                android:layout_gravity="start"
+                android:singleLine="false"
+                android:layout_marginLeft="75dp"
+                tools:text="1234"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnConfirm"
+        style="@style/Button_Confirm_style"
+        android:layout_marginTop="5dp"
+        android:text="确认赠送" />
+</LinearLayout>

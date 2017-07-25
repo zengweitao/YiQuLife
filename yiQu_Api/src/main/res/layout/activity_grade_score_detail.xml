@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_grade_score_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_default"
+    android:orientation="vertical"
+    tools:context="com.quanmai.yiqu.ui.grade.GradeScoreDetailActivity">
+
+    <include layout="@layout/common_title_view"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        >
+
+        <TextView
+            android:id="@+id/tvCommunity"
+            style="@style/TextView_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="false"
+            android:layout_marginTop="10dp"
+            android:textSize="17sp"
+            tools:text="安徽桂花园"
+            />
+
+        <TextView
+            android:id="@+id/tvEquipment"
+            style="@style/TextView_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCommunity"
+            android:layout_centerVertical="false"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/text_color_979797"
+            android:textSize="14sp"
+            tools:text="设施点B"
+            />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <!--图片列表-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="135.5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                >
+
+                <com.quanmai.yiqu.common.widget.CircularImageView
+                    android:id="@+id/imgEquipment1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/bg_gray_stroke_1px"
+                    app:circular_radius="4dp"
+                    app:circular_type="round"
+                    />
+
+                <com.quanmai.yiqu.common.widget.CircularImageView
+                    android:id="@+id/imgEquipment2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/bg_gray_stroke_1px"
+                    app:circular_radius="4dp"
+                    app:circular_type="round"
+                    android:visibility="gone"
+                    />
+
+                <com.quanmai.yiqu.common.widget.CircularImageView
+                    android:id="@+id/imgEquipment3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/bg_gray_stroke_1px"
+                    app:circular_radius="4dp"
+                    app:circular_type="round"
+                    android:visibility="gone"
+                    />
+
+            </RelativeLayout>
+
+            <!--设施评分标题-->
+            <RelativeLayout
+                android:id="@+id/rlEquipment"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    style="@style/TextView_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="设施评分项"
+                    android:textColor="@color/theme"
+                    android:textSize="14sp"
+                    />
+
+                <TextView
+                    style="@style/TextView_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="80dp"
+                    android:text="数量"
+                    android:textColor="@color/theme"
+                    android:textSize="14sp"
+                    />
+
+                <TextView
+                    style="@style/TextView_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:text="扣分值"
+                    android:textColor="@color/theme"
+                    android:textSize="14sp"
+                    />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="213dp"
+                    android:background="@color/theme"></View>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="55dp"
+                    android:background="@color/theme"></View>
+
+
+            </RelativeLayout>
+
+            <!--清运评分标题-->
+            <RelativeLayout
+                android:id="@+id/rlClean"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    style="@style/TextView_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="清运评分项"
+                    android:textColor="@color/theme"
+                    android:textSize="14sp"
+                    />
+
+
+                <TextView
+                    style="@style/TextView_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:text="扣分值"
+                    android:textColor="@color/theme"
+                    android:textSize="14sp"
+                    />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="55dp"
+                    android:background="@color/theme"></View>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/theme"></View>
+
+            <LinearLayout
+                android:id="@+id/llList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:background="@color/white"
+                android:divider="@drawable/bg_cutting_line_left_15dp"
+                android:orientation="vertical"
+                android:showDividers="middle"
+                >
+            </LinearLayout>
+
+            <include layout="@layout/view_cutting_line_1px"></include>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

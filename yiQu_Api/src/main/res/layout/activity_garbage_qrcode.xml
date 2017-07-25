@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_garbage_qrcode"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    tools:context="com.quanmai.yiqu.ui.booking.GarbageQRCodeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/common_title_view"></include>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:minHeight="89.5dp"
+            android:paddingBottom="10.5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="准备投放"
+                android:textColor="@color/text_color_default"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/tvThrowType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="44dp"
+                tools:text="投放类型：纸箱"
+                android:textColor="@color/theme"
+                android:textSize="18sp"
+                />
+
+        </RelativeLayout>
+
+        <include layout="@layout/view_cutting_line_1px"></include>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="275dp"
+            android:layout_height="275dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_gray_stroke_1px">
+
+            <ImageView
+                android:id="@+id/imgQRCode"
+                android:layout_width="260dp"
+                android:layout_height="260dp"
+                tools:background="@drawable/qrcode"
+                android:visibility="gone"
+                />
+            <LinearLayout
+                android:id="@+id/linearLayoutMore"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:id="@+id/imgQRCode1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        tools:background="@drawable/qrcode"
+                        android:layout_margin="5dp"
+                        />
+                    <ImageView
+                        android:id="@+id/imgQRCode2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        tools:background="@drawable/qrcode"
+                        android:layout_margin="5dp"
+                        />
+                    <ImageView
+                        android:id="@+id/imgQRCode3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        tools:background="@drawable/qrcode"
+                        android:layout_margin="5dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        android:visibility="invisible"
+                        />
+                    <ImageView
+                        android:id="@+id/imgQRCode4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        tools:background="@drawable/qrcode"
+                        android:layout_margin="5dp"
+                        />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        android:visibility="invisible"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:id="@+id/imgQRCode5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        tools:background="@drawable/qrcode"
+                        android:layout_margin="5dp"
+                        />
+                    <ImageView
+                        android:id="@+id/imgQRCode6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        tools:background="@drawable/qrcode"
+                        android:layout_margin="5dp"
+                        />
+                    <ImageView
+                        android:id="@+id/imgQRCode7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        tools:background="@drawable/qrcode"
+                        android:layout_margin="5dp"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/textViewDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginTop="10dp"
+            android:text="请将二维码对准机器的二维码扫描窗口，待扫码成功机器打开投放入口将废品投如后点击此页面下方的“完成投放”完成投放步骤"
+            android:textColor="@color/text_color_default"
+            android:textSize="14sp"
+            />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnConfirm"
+        style="@style/Button_Style"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="完成投放"/>
+</RelativeLayout>

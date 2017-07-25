@@ -1,0 +1,766 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearContent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.quanmai.yiqu.common.widget.PullToZoomScrollView
+        android:id="@+id/pullToZoomScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_default">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/personal_head" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:divider="@drawable/bg_cutting_line_left_15dp"
+                android:orientation="vertical"
+                android:showDividers="middle">
+
+                <!--我的消息-->
+                <RelativeLayout
+                    android:id="@+id/relativeLayoutYCoin"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:id="@+id/imageViewYCoin"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12.5dp"
+                        android:background="@drawable/icon_ycoin" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10.5dp"
+                        android:layout_toRightOf="@+id/imageViewYCoin"
+                        android:text="我的益币"
+                        android:textColor="@color/text_color_default"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textViewYCoin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:layout_toLeftOf="@+id/viewArrows"
+                        android:textColor="@color/text_color_default"
+                        android:textSize="16sp"
+                        tools:text="12" />
+
+                    <View
+                        android:id="@+id/viewArrows"
+                        android:layout_width="7dp"
+                        android:layout_height="12dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/ic_arrow_right" />
+                </RelativeLayout>
+
+
+                <!--我的福袋-->
+                <RelativeLayout
+                    android:id="@+id/relativeLayoutLuckyBag"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12.5dp"
+                        android:background="@drawable/icon_lucky_bag" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10.5dp"
+                        android:layout_toRightOf="@+id/imageView"
+                        android:text="我的福袋"
+                        android:textColor="@color/text_color_default"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textViewFednums"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="35dp"
+                        android:textColor="@color/text_color_default"
+                        android:textSize="16sp"
+                        tools:text="12个" />
+
+                    <View
+                        android:layout_width="7dp"
+                        android:layout_height="12dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/ic_arrow_right" />
+                </RelativeLayout>
+                <!--我的消息-->
+                <RelativeLayout
+                    android:id="@+id/relativeLayoutMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12.5dp"
+                        android:background="@drawable/icon_message" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10.5dp"
+                        android:layout_toRightOf="@+id/imageView1"
+                        android:text="我的消息"
+                        android:textColor="@color/text_color_default"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/imageViewBadge"
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/bg_red_oval"
+                        android:visibility="gone" />
+
+                    <View
+                        android:layout_width="7dp"
+                        android:layout_height="12dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/ic_arrow_right" />
+                </RelativeLayout>
+                <!-- 发布管理-->
+                <RelativeLayout
+                    android:id="@+id/relativeLayoutPublish"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12.5dp"
+                        android:background="@drawable/icon_publish" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10.5dp"
+                        android:layout_toRightOf="@+id/imageView2"
+                        android:text="发布管理"
+                        android:textColor="@color/text_color_default"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="7dp"
+                        android:layout_height="12dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/ic_arrow_right" />
+                </RelativeLayout>
+                <!-- 我的优惠券-->
+                <RelativeLayout
+                    android:id="@+id/relativeLayoutMyCoupon"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="@color/white"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/imageViewMyCoupon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12.5dp"
+                        android:background="@drawable/ic_coupon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10.5dp"
+                        android:layout_toRightOf="@+id/imageViewMyCoupon"
+                        android:text="我的优惠券"
+                        android:textColor="@color/text_color_default"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="7dp"
+                        android:layout_height="12dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/ic_arrow_right" />
+                </RelativeLayout>
+                <!-- 取袋记录-->
+                <RelativeLayout
+                    android:id="@+id/relativeLayoutFetchBagRecord"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12.5dp"
+                        android:background="@drawable/ic_fetch_bag" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="52dp"
+                        android:text="取袋记录"
+                        android:textColor="@color/text_color_default"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="7dp"
+                        android:layout_height="12dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/ic_arrow_right" />
+                </RelativeLayout>
+
+                <!--我的团购-->
+                <RelativeLayout
+                    android:id="@+id/relativeLayoutMyGroupBuy"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12.5dp"
+                        android:background="@drawable/icon_my_group_buy" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="52.5dp"
+                        android:text="我的团购"
+                        android:textColor="@color/text_color_default"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="7dp"
+                        android:layout_height="12dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/ic_arrow_right" />
+                </RelativeLayout>
+                <!--已关闭-->
+                <RelativeLayout
+                    android:id="@+id/relativeLayoutClosed"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="@color/white"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12.5dp"
+                        android:background="@drawable/icon_closed" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10.5dp"
+                        android:layout_toRightOf="@+id/imageView3"
+                        android:text="已关闭"
+                        android:textColor="@color/text_color_default"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="7dp"
+                        android:layout_height="12dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/ic_arrow_right" />
+                </RelativeLayout>
+                <!--我的收藏-->
+                <RelativeLayout
+                    android:id="@+id/relativeLayoutCollection"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12.5dp"
+                        android:background="@drawable/icon_collection" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10.5dp"
+                        android:layout_toRightOf="@+id/imageView4"
+                        android:text="我的收藏"
+                        android:textColor="@color/text_color_default"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="7dp"
+                        android:layout_height="12dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/ic_arrow_right" />
+
+                </RelativeLayout>
+                <!--绑定住户-->
+                <RelativeLayout
+                    android:id="@+id/relativeLayoutResidentBinding"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12.5dp"
+                        android:background="@drawable/ic_resident_binding" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="52dp"
+                        android:text="绑定住户"
+                        android:textColor="@color/text_color_default"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="7dp"
+                        android:layout_height="12dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/ic_arrow_right" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <include layout="@layout/view_cutting_line_1px"></include>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:divider="@drawable/bg_cutting_line_left_15dp"
+                android:orientation="vertical"
+                android:showDividers="middle">
+                <!--设置-->
+                <RelativeLayout
+                    android:id="@+id/relativeLayoutSetting"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12.5dp"
+                        android:background="@drawable/icon_setting" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10.5dp"
+                        android:layout_toRightOf="@+id/imageView6"
+                        android:text="设置"
+                        android:textColor="@color/text_color_default"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_red"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:layout_toLeftOf="@+id/viewArrow"
+                        android:background="@drawable/bg_red_oval"
+                        android:visibility="gone" />
+
+                    <View
+                        android:id="@+id/viewArrow"
+                        android:layout_width="7dp"
+                        android:layout_height="12dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/ic_arrow_right" />
+                </RelativeLayout>
+                <!--分享-->
+                <RelativeLayout
+                    android:id="@+id/relativeShare"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12.5dp"
+                        android:background="@drawable/icon_share" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10.5dp"
+                        android:layout_toRightOf="@+id/imageView7"
+                        android:text="分享益趣生活"
+                        android:textColor="@color/text_color_default"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="7dp"
+                        android:layout_height="12dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/ic_arrow_right" />
+
+                </RelativeLayout>
+                <!--手工发袋-->
+                <RelativeLayout
+                    android:id="@+id/relativeHandWork"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="@color/white"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/imageHandWork"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12.5dp"
+                        android:background="@drawable/icon_hand_work" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10.5dp"
+                        android:layout_toRightOf="@+id/imageHandWork"
+                        android:text="手工发袋"
+                        android:textColor="@color/text_color_default"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="7dp"
+                        android:layout_height="12dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/ic_arrow_right" />
+
+                </RelativeLayout>
+                <!--赠送积分-->
+                <RelativeLayout
+                    android:id="@+id/relativeLayoutGivePoint"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="@color/white"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/imageViewIntegrals"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12.5dp"
+                        android:background="@drawable/icon_integrals" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10.5dp"
+                        android:layout_toRightOf="@+id/imageViewIntegrals"
+                        android:text="赠送积分"
+                        android:textColor="@color/text_color_default"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="7dp"
+                        android:layout_height="12dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/ic_arrow_right" />
+                </RelativeLayout>
+                <!--废品回收-->
+                <RelativeLayout
+                    android:id="@+id/relativeLayoutRecycleOrder"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="@color/white"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/imageViewRecycle"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12.5dp"
+                        android:background="@drawable/icon_recycle" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10.5dp"
+                        android:layout_toRightOf="@+id/imageViewRecycle"
+                        android:text="废品回收"
+                        android:textColor="@color/text_color_default"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="7dp"
+                        android:layout_height="12dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/ic_arrow_right" />
+                </RelativeLayout>
+                <!--巡检-->
+                <RelativeLayout
+                    android:id="@+id/relativeLayoutInspection"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="@color/white"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12.5dp"
+                        android:background="@drawable/icon_inspection" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10.5dp"
+                        android:layout_toRightOf="@+id/imageView5"
+                        android:text="巡检"
+                        android:textColor="@color/text_color_default"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="7dp"
+                        android:layout_height="12dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/ic_arrow_right" />
+                </RelativeLayout>
+                <!--赠送礼品-->
+                <RelativeLayout
+                    android:id="@+id/relativeLayoutGiftGiving"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:visibility="gone"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12.5dp"
+                        android:background="@drawable/icon_gift_giving" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10.5dp"
+                        android:layout_toRightOf="@+id/imageView10"
+                        android:text="赠送礼品"
+                        android:textColor="@color/text_color_default"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="7dp"
+                        android:layout_height="12dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/ic_arrow_right" />
+                </RelativeLayout>
+                <!--垃圾分类得分-->
+                <RelativeLayout
+                    android:id="@+id/relativeLayoutRecycleScore"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="@color/white"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12.5dp"
+                        android:background="@drawable/icon_score" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10.5dp"
+                        android:layout_toRightOf="@+id/imageView8"
+                        android:text="垃圾分类得分"
+                        android:textColor="@color/text_color_default"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="7dp"
+                        android:layout_height="12dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/ic_arrow_right" />
+                </RelativeLayout>
+                <!-- 扫描户码获取信息-->
+                <RelativeLayout
+                    android:id="@+id/relativeLayoutgetuserdata"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:visibility="gone"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:id="@+id/imageView12"
+                        android:layout_width="27dp"
+                        android:layout_height="27dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="13dp"
+                        android:background="@drawable/icon_scan_housecode" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10.5dp"
+                        android:layout_toRightOf="@+id/imageView12"
+                        android:text="扫户码获取信息"
+                        android:textColor="@color/text_color_default"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="7dp"
+                        android:layout_height="12dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/ic_arrow_right" />
+                </RelativeLayout>
+                <!--现场回收-->
+                <RelativeLayout
+                    android:id="@+id/relativeLayoutRecycleLocal"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:visibility="gone"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:id="@+id/imageView11"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12.5dp"
+                        android:background="@drawable/icon_recycle_local" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10.5dp"
+                        android:layout_toRightOf="@+id/imageView11"
+                        android:text="现场回收"
+                        android:textColor="@color/text_color_default"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="7dp"
+                        android:layout_height="12dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/ic_arrow_right" />
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+            <include layout="@layout/view_cutting_line_1px"></include>
+        </LinearLayout>
+
+    </com.quanmai.yiqu.common.widget.PullToZoomScrollView>
+</LinearLayout>

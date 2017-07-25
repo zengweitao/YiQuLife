@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <string name="app_name">益趣生活</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_point_record">PointRecordActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="scan_text">将二维码放入框内扫描</string>
+    <string name="net_exception">网络异常，请稍候再试</string>
+    <string name="no_data">没有找到符合条件的资源</string>
+    <string name="str_home">首页</string>
+    <string name="str_around">周边</string>
+    <string name="str_unused">闲置</string>
+    <string name="str_personal">我的</string>
+    <string name="str_fetch_btn">扫一扫</string>
+    <string name="str_unreceived">待接单</string>
+    <string name="str_not_take">待收取</string>
+    <string name="str_finished">已完成</string>
+    <string name="str_loading_text">请稍候</string>
+    <string name="save_picture_failed">保存失败</string>
+    <string name="save_picture_success">图片成功保存至%s目录</string>
+    <string name="not_login_remind">登录后并领取一个环保袋即可绑定社区，绑定社区即可看到周边商铺的特殊优惠券、摇一摇优惠券、周边社区公告与实惠信息</string>
+    <string name="not_bind_remind">使用首页领取环保袋功能到指定机器领取一个环保袋即可绑定社区，绑定社区即可看到周边商铺的特殊优惠券、摇一摇优惠券、周边社区公告与实惠信息</string>
+    <string name="str_personal_grade">①你通过本功能对自己的垃圾进行评分，审核通过可获得日常用垃圾袋。\n②评分操作要求：\t\t\n第一步.点击拍照，打开垃圾袋，将袋内垃圾情况拍照上传；\t\t\n第二步.根据袋内垃圾分类情况，进行自评分选择；\t\t\n第三步.确认提交(等待审核)；</string>
+    <string name="str_game_notbind">\t\t参加游戏竞赛需先绑定小区，绑定后会有相关游戏竞赛介绍，没有绑定小区依然可以玩游戏，也会有相应的积分奖励，但无法参加游戏竞赛！</string>
+
+    <string name="url_about">http://115.28.228.192:8080/yiqu/about/index.html</string>
+    <!--实名制绑定的协议-->
+    <string name="url_protocol">http://app.eacheart.com/yiqu/account-protocol.html</string>
+    <!--什么是指定用户-->
+    <string name="url_intro">http://app.eacheart.com/yiqu/account-intro.html</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="title_activity_home">首页</string>
+    <string name="title_activity_login">登录</string>
+    <string name="title_activity_register">注册</string>
+    <string name="title_activity_bar_code">扫描结果</string>
+    <string name="title_activity_change_pwd">修改登录密码</string>
+    <string name="title_activity_forget_pwd">重置密码</string>
+    <string name="title_activity_sign_record">签到记录</string>
+    <string name="title_activity_collection_list">我的收藏</string>
+    <string name="title_activity_setting">设置</string>
+    <string name="title_activity_fix_manage_record_list">管理员报修记录列表</string>
+    <string name="title_activity_personal_info_setting">个人资料设置</string>
+    <string name="title_activity_transaction_home">闲置物品</string>
+    <string name="title_activity_transaction_detail">交易详情</string>
+    <string name="title_activity_transaction_zone">他的主页</string>
+    <string name="title_activity_capture">扫码取袋</string>
+    <string name="title_activity_transaction_list">交易列表(搜索)</string>
+    <string name="title_activity_transaction_search">交易列表</string>
+    <string name="title_activity_about">关于</string>
+    <string name="title_activity_message">评论</string>
+    <string name="title_activity_vip_detail">会员详情</string>
+    <string name="title_activity_news">消息</string>
+    <string name="title_activity_publish_manage">我的发布</string>
+    <string name="title_activity_change_bag">领取环保袋</string>
+    <string name="title_activity_change_bag_second_step">领取环保袋</string>
+    <string name="title_activity_fix">小区报修</string>
+    <string name="title_activity_nick_name">个人资料设置(昵称修改)</string>
+    <string name="title_activity_problem_choice">选择常见问题</string>
+    <string name="title_activity_fix_record_detail">报修详情</string>
+    <string name="title_activity_degree_choice">成色</string>
+    <string name="title_activity_type">类别</string>
+    <string name="title_activity_nearly_device">周边设备</string>
+    <string name="title_activity_integrate_data">积分详情</string>
+    <string name="title_activity_integrate_query">积分查询</string>
+    <string name="title_activity_grade_manager">巡检记录</string>
+    <string name="title_activity_fix_record">报修记录</string>
+    <string name="title_activity_fuli">福利</string>
+
+    <string name="title_activity_community_service">社区服务</string>
+    <string name="title_activity_service_search">社区服务（搜索）</string>
+    <string name="title_activity_lucky_bag">领取福袋</string>
+    <string name="title_activity_answer_questions">领取福袋（答题）</string>
+    <string name="title_activity_unused_detail">闲置详情</string>
+    <string name="title_activity_publish_unused">发布物品</string>
+    <string name="title_activity_unused_list">闲置列表</string>
+    <string name="title_activity_classify_garbage">知识详情</string>
+    <string name="title_activity_score_detail">评分明细</string>
+    <string name="title_activity_scan_result">扫描结果</string>
+    <string name="title_activity_edit_unused">闲置修改</string>
+    <string name="title_activity_vip_introduce">等级特权说明</string>
+
+    <string name="title_activity_booking">回收预约</string>
+    <string name="title_activity_add_recycle_address">设置回收地址</string>
+    <string name="title_activity_booking_second">回收预约第二步</string>
+    <string name="title_activity_booking_status">回收预约状态</string>
+    <string name="title_activity_edit_amount">修改数量</string>
+    <string name="title_activity_recycle_success">回收成功</string>
+    <string name="title_activity_give_integration">赠送积分</string>
+    <string name="title_activity_recycle_record">预约记录</string>
+    <string name="title_activity_booking_details">预约详情</string>
+    <string name="title_activity_booking_status_record">预约状态</string>
+    <string name="title_activity_integral_details">积分详情</string>
+    <string name="title_activity_recycle_order">回收订单</string>
+    <string name="title_activity_recycle_order_detail">回收订单详情</string>
+    <string name="title_activity_classify_knowledge">分类知识</string>
+    <string name="title_activity_not_my_community">不是我所在的小区怎么办</string>
+    <string name="title_activity_show_qrcode">扫描二维码</string>
+    <string name="title_activity_recycle_score_record">垃圾分类积分</string>
+    <string name="title_activity_recycle_garbage_sorting">垃圾分类</string>
+    <string name="title_activity_recycle_score_explain">得分说明</string>
+    <string name="title_activity_recycle_shake">摇一摇主界面</string>
+    <string name="title_activity_recycle_my_shake_coupon">我的优惠券</string>
+    <string name="title_activity_recycle_coupon_list">优惠券列表</string>
+    <string name="title_activity_recycle_news_search">资讯搜索界面</string>
+    <string name="title_activity_around_detail">咨询or优惠券详情</string>
+    <string name="title_activity_around_show_coupon_direct">优惠卷直接展示</string>
+    <string name="title_activity_around_my_coupon">我的优惠卷</string>
+    <string name="title_activity_classify_game">趣味游戏</string>
+    <string name="title_activity_resident_binding">住户绑定</string>
+    <string name="title_activity_binding_info">住户绑定信息</string>
+    <string name="title_activity_address_choice">住址选择</string>
+    <string name="title_activity_address_search">住址选择-搜索</string>
+    <string name="title_activity_undetermined">申诉/申请待审核</string>
+    <string name="title_activity_resident_appeal">住户申诉</string>
+    <string name="title_activity_application_audit">审核入户申请</string>
+    <string name="title_activity_resident_unbind">住户取消绑定</string>
+    <string name="title_activity_gain_integral">答题赚积分</string>
+    <string name="title_activity_pic_view">查看大图</string>
+    <string name="ad_launch">ad_launch</string>
+    <string name="title_activity_all_coupon">全部优惠卷</string>
+    <string name="title_activity_group_buying">团购详情</string>
+
+    <!--手工发袋-->
+    <string name="title_activity_grant_bag">发放环保袋</string>
+    <string name="title_activity_material_details">物料详情</string>
+    <string name="title_activity_unit_choose">选择送货单位</string>
+    <string name="title_activity_hand_work">手工发袋</string>
+    <string name="title_activity_scanning">二维码扫描</string>
+    <string name="title_activity_grade_index">GradeIndexActivity</string>
+    <string name="title_activity_choose_score_community">ChooseScoreCommunityActivity</string>
+    <string name="title_activity_choose_equipment">ChooseEquipmentActivity</string>
+    <string name="title_activity_grade_equipment">GradeEquipmentActivity</string>
+    <string name="title_activity_classification_details">ClassificationDetailsActivity</string>
+
+    <!--Tag-->
+    <item name="tag_position" type="id"></item>
+    <item name="tag_tv_content" type="id"></item>
+    <item name="tag_img_checked" type="id"></item>
+
+    <string name="prefix_qiniu">https://imgs.eacheart.com:9444/</string>
+    <string name="title_activity_drop_garbage">DropGarbageActivity</string>
+    <string name="title_activity_ycoins">YCoinsActivity</string>
+    <string name="title_activity_fetch_record">FetchRecordActivity</string>
+</resources>

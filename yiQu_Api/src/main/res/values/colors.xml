@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="theme">#48c299</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="bg_default">#F2F2F2</color>
+    <color name="bg_f9f9f9">#f9f9f9</color>
+    <color name="transparent">#00000000</color>
+    <color name="divide_qian">#dbdbdb</color>
+    <color name="orange_e96104">#e96104</color>
+    <color name="orange_ff8124">#ff8124</color>
+    <color name="orange_f5a623">#F5A623</color>
+    <color name="gray_f2f2f2">#f2f2f2</color>
+    <color name="custom_red">#f4492f</color>
+    <color name="custom_green">#81c146</color>
+    <color name="custom_pink">#f56e4e</color>
+    <color name="bg_color_e5e7ea">#e5e7ea</color>
+    <color name="btn_false">#00000000</color>
+    <color name="btn_true">#23000000</color>
+    <color name="color_F3F4F9">#F3F4F9</color>
+    <color name="color_e56d66">#e56d66</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_d9d9d9d9">#d9d9d9d9</color>
+    <color name="color_f4f4f4">#f4f4f4</color>
+
+    <!-- 自定义日历 -->
+    <color name="calendar_active_month_bg">#ffffffff</color>
+    <color name="calendar_bg">#ffffffff</color>
+    <color name="calendar_divider">#ffbababa</color>
+    <color name="calendar_inactive_month_bg">#ffffffff</color>
+    <color name="calendar_selected_day_bg">#ff379bff</color>
+    <color name="calendar_highlighted_day_bg">#ccffcc</color>
+    <color name="calendar_selected_range_bg">#ff96caff</color>
+    <color name="calendar_text_inactive">#bdc5cb</color>
+    <color name="calendar_text_active">#ff778088</color>
+    <color name="calendar_text_selected">#ffffffff</color>
+    <color name="calendar_text_unselectable">#6a7883</color>
+    <color name="popup_main_background">#b0000000</color>
+    <color name="choose_eara_item_press_color">#f4f4f4</color>
+    <color name="no_color">#00000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+
+
+    <!--常用字体颜色-->
+    <color name="tab_text_color">#b4b4b4</color>
+    <color name="text_color_default">#575757</color>
+    <color name="text_color_hint">#b4b4b4</color>
+    <color name="text_color_red">#fc5524</color>
+    <color name="text_color_green">#7fd981</color>
+    <color name="text_color_242424">#242424</color>
+    <color name="text_color_333333">#333333</color>
+    <color name="text_color_666666">#666666</color>
+    <color name="text_color_6a6a6a">#6a6a6a</color>
+    <color name="text_color_808080">#808080</color>
+    <color name="text_color_979797">#979797</color>
+    <color name="text_color_999999">#999999</color>
+    <color name="text_color_cdcdcd">#cdcdcd</color>
+    <color name="text_color_4a90e2">#4A90E2</color>
+    <color name="text_color_5397e7">#5397e7</color>
+    <color name="text_color_fe5236">#fe5246</color>
+    <color name="text_color_F5A623">#F5A623</color>
+    <color name="text_color_f08e1b">#f08e1b</color>
+    <color name="text_color_F36C60">#F36C60</color>
+    <color name="text_color_e56d66">#e56d66</color>
+    <color name="text_color_48c299">#48c299</color>
+    <color name="text_color_6cbf9c">#6cbf9c</color>
+    <color name="text_color_02AFF3">#02AFF3</color>
+    <color name="text_color_157EFB">#157EFB</color>
+    <color name="text_color_FFA39B">#FFA39B</color>
+    <color name="text_color_B4B4B4">#B4B4B4</color>
+    <color name="text_color_454545">#454545</color>
+    <color name="text_color_B5B5B5">#B5B5B5</color>
+
+
+    <!--状态栏颜色-->
+    <color name="primary">#48c299</color>
+    <color name="primary_dark">#48c299</color>
+    <color name="status_bar_color">@color/primary_dark</color>
+    <color name="color_bg">#F2F2F2</color>
+
+    <!--常用颜色-->
+    <color name="card_background">#ffffff</color>
+    <color name="card_shadow">#10000000</color>
+    <color name="lite_blue">#ff359ff2</color>
+    <color name="window_background">#00000000</color>
+    <color name="black_de">#DE000000</color>
+    <color name="bg_alpha_10">#1A000000</color>
+    <color name="bg_alpha_20">#33000000</color>
+    <color name="bg_alpha_30">#4D000000</color>
+    <color name="bg_alpha_40">#66000000</color>
+    <color name="bg_alpha_50">#80000000</color>
+    <color name="color_FF776D">#FF776d</color>
+    <color name="color_02AFF3">#02AFF3</color>
+    <color name="color_FF8E86">#FF8E86</color>
+    <color name="color_FFEC00">#FFEC00</color>
+    <color name="color_f0eff5">#f0eff5</color>
+
+
+    <color name="colorPrimary">#3F51B5</color>
+
+    <color name="colorPrimaryDark">#303F9F</color>
+
+    <color name="colorAccent">#FF4081</color>
+
+
+</resources>

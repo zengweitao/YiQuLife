@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#ffffff"
+              android:orientation="vertical"
+              tools:context="com.quanmai.yiqu.ui.Around.AroundDetailsActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:max="100"
+        android:progressDrawable="@drawable/bg_progress_bar"
+        android:visibility="gone"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <com.quanmai.yiqu.common.widget.MyScrollViewForWeb
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:id="@+id/imageViewBg"
+                    android:layout_width="match_parent"
+                    android:layout_height="225dp"
+                    android:background="#f2f2f2"
+                    android:scaleType="centerCrop"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5px"
+                    android:background="#cdcdcd"/>
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    >
+
+                    <TextView
+                        android:id="@+id/textViewTagAndDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textColor="#979797"
+                        android:textSize="11sp"
+                        tools:text="周边优惠  |  04-16"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal"
+                        >
+
+                        <ImageView
+                            android:layout_width="13.5dp"
+                            android:layout_height="10dp"
+                            android:background="@drawable/around_details_eye_bg"
+                            />
+
+                        <TextView
+                            android:id="@+id/textViewBrowseCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center_vertical"
+                            android:textColor="#979797"
+                            android:textSize="11sp"
+                            tools:text="188"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textViewTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textColor="#454545"
+                    android:textSize="17sp"
+                    tools:text="5月26日滴滴打车百元礼包 95折快车券+8折专车券"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewDesciption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:singleLine="true"
+                    android:textColor="#fe5246"
+                    android:textSize="14sp"
+                    tools:text="95折快车券+8折专车券"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:id="@+id/textViewDateTime"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:textColor="#979797"
+                        android:textSize="14sp"
+                        tools:text="有效期至2016年06月05日"
+                        />
+
+                    <ImageView
+                        android:id="@+id/imageViewCollection"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/around_details_collection_none"
+                        android:padding="2dp"
+                        />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5px"
+                    android:layout_margin="15dp"
+                    android:background="#cdcdcd"
+                    />
+
+                <WebView
+                    android:id="@+id/webView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </WebView>
+                <!--<TextView-->
+                <!--android:id="@+id/textViewLoadHtml"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent" />-->
+            </LinearLayout>
+
+        </com.quanmai.yiqu.common.widget.MyScrollViewForWeb>
+
+
+        <ImageView
+            android:id="@+id/imageViewBack"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/around_details_round_back"
+            />
+
+        <ImageView
+            android:id="@+id/imageViewShare"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/around_details_round_share"
+            />
+
+        <RelativeLayout
+            android:id="@+id/relativeBar"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@color/theme"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                tools:text="优惠详情"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="25dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                />
+
+            <ImageView
+                android:id="@+id/imageViewScrollBack"
+                android:layout_width="44dp"
+                android:layout_height="39dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/bg_btn_transparent"
+                android:onClick="finish"
+                android:paddingBottom="9dp"
+                android:paddingLeft="15.5dp"
+                android:paddingRight="15.5dp"
+                android:paddingTop="9dp"
+                android:src="@drawable/arrow_left_white"/>
+
+            <ImageView
+                android:id="@+id/imageViewScrollShare"
+                android:layout_width="44dp"
+                android:layout_height="39dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/bg_btn_transparent"
+                android:paddingBottom="9dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="9dp"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/around_show_coupon_share_bg"
+                />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#cdcdcd"/>
+
+    <Button
+        android:id="@+id/buttonFetch"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_confirm_button"
+        android:text="领取优惠"
+        android:textColor="#ffffff"
+        android:textSize="17sp"
+        />
+</LinearLayout>

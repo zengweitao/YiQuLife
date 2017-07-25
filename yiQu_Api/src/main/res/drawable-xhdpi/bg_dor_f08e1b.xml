@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 连框颜色值 -->
+    <item>
+        <shape android:shape="oval" >
+            <solid android:color="@color/text_color_f08e1b" />
+
+            <size
+                android:height="@dimen/x20"
+                android:width="@dimen/x20" />
+        </shape>
+    </item>
+
+</layer-list>

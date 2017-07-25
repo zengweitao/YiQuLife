@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_default"
+    tools:context="com.quanmai.yiqu.ui.mys.realname.ResidentBindingActivity">
+
+    <include layout="@layout/common_title_view"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="54dp"
+            android:background="@color/white"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                style="@style/TextView_style"
+                android:text="姓名" />
+
+            <EditText
+                android:id="@+id/editRealName"
+                style="@style/EditText_Style"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="70dp"
+                android:background="@null"
+                android:hint="输入您的真实姓名"
+                android:maxLength="10" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/white"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                style="@style/TextView_style"
+                android:text="手机号" />
+
+            <EditText
+                android:id="@+id/editPhoneNum"
+                style="@style/EditText_Style"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="70dp"
+                android:background="@null"
+                android:hint="输入您的手机号"
+                android:inputType="number"
+                android:maxLength="20" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlAddressChoice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                style="@style/TextView_style"
+                android:layout_centerVertical="false"
+                android:text="住址" />
+
+            <TextView
+                android:id="@+id/tvAddress"
+                style="@style/TextView_style"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="20dp"
+                android:hint="选择您的住房"
+                android:singleLine="false"
+                android:textColor="@color/text_color_hint" />
+
+            <View
+                android:id="@+id/viewArrows"
+                android:layout_width="7dp"
+                android:layout_height="12dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_arrow_right"></View>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="VIP用户，可以享受社区每月免费发放的福利。"
+            android:textColor="@color/text_color_979797"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvDesignated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="15dp"
+            android:text="什么是VIP用户？"
+            android:textColor="@color/text_color_4a90e2"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnBinding"
+        android:gravity="center_horizontal"
+        android:padding="15dp">
+
+        <CheckBox
+            android:id="@+id/checkBoxAgree"
+            style="@style/MyCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:padding="5dp" />
+
+        <TextView
+            android:id="@+id/textViewIntroduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="同意"
+            android:textColor="@color/text_color_default"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvIntroduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="《VIP用户协议》"
+            android:textColor="@color/text_color_4a90e2"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnBinding"
+        style="@style/Button_Confirm_style"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="0dp"
+        android:text="绑定" />
+
+</RelativeLayout>

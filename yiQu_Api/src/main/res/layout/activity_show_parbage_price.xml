@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.quanmai.yiqu.ui.booking.ShowParbagePriceActivity">
+
+    <include layout="@layout/common_title_view"
+        android:id="@+id/include"/>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/pulltorefresh_parbage_price"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:layout_marginBottom="@dimen/y34"
+        android:layout_below="@+id/include">
+
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+    <ImageView
+        android:id="@+id/imageview_top"
+        android:layout_width="@dimen/x80"
+        android:layout_height="@dimen/x80"
+        android:background="@drawable/btn_up"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/x34"
+        android:layout_marginBottom="@dimen/y50"/>
+
+</RelativeLayout>

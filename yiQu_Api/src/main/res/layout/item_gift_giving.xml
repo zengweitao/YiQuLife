@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_gray_stroke_1px">
+
+        <TextView
+            android:id="@+id/tvName"
+            style="@style/TextView_style"
+            android:layout_marginLeft="15dp"
+            android:text="扫把"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/tvYCoins"
+            style="@style/TextView_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/tvGiving"
+            android:text="60益币"
+            android:textColor="@color/text_color_B5B5B5"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvGiving"
+            style="@style/TextView_style"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/bg_green_stroke_2px"
+            android:gravity="center"
+            android:text="赠送"
+            android:textColor="@color/theme"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_ycoins"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_f2f2f2"
+    tools:context="com.quanmai.yiqu.ui.ycoin.YCoinsActivity">
+
+    <include layout="@layout/common_title_view" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="109dp"
+        android:background="@color/theme"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            >
+
+            <LinearLayout
+                android:id="@+id/llCoins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_centerHorizontal="true"
+                >
+
+                <ImageView
+                    android:layout_width="17dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/icon_my_ycoin"
+                    />
+                <TextView
+                    android:id="@+id/textViewYCoins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="268"
+                    android:textSize="35sp"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="7.5dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal"
+                android:layout_below="@+id/llCoins"
+                android:layout_marginLeft="43dp"
+                android:layout_marginRight="43dp"
+                android:layout_marginTop="15dp"
+                >
+                <TextView
+                    android:id="@+id/textViewYCoinsRecord"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="益币领取记录"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:background="@drawable/bg_white_left_conner_ycoin"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewGiftRecord"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="礼品领取记录"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:background="@drawable/bg_white_right_conner_ycoin"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="395dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:elevation="4dp"
+                android:background="@drawable/bg_my_ycoins_qrcode"
+                android:gravity="center_horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/imageViewQRCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="225dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginRight="45dp"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewSerialNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="2817283732847389"
+                    android:textSize="15sp"
+                    android:textColor="@color/text_color_default"
+                    android:lines="1"
+                    android:layout_margin="10dp"
+                    android:ellipsize="end"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="将二维码展示给活动工作人员，待工作人员扫码后即可扣除您相应的益币并赠送礼品"
+                    android:textSize="15sp"
+                    android:textColor="@color/text_color_979797"
+                    android:gravity="bottom"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="19dp"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="34dp"
+                android:layout_marginBottom="15dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="该功能用于现场兑换礼品  "
+                    android:textSize="14sp"
+                    android:textColor="@color/text_color_979797"
+                    />
+                <TextView
+                    android:id="@+id/textViewUseRule"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="使用详情"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_color_157EFB"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

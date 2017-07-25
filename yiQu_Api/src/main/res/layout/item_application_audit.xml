@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        >
+
+        <com.quanmai.yiqu.common.widget.XCRoundImageView
+            android:id="@+id/ivHead"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:scaleType="centerCrop"
+            tools:background="@drawable/ic_launcher"
+            />
+
+        <TextView
+            android:id="@+id/tvName"
+            style="@style/TextView_style"
+            android:layout_centerVertical="false"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="10dp"
+            tools:text="陈锋"
+            />
+
+        <TextView
+            android:id="@+id/tvPhone"
+            style="@style/TextView_style"
+            android:layout_centerVertical="false"
+            android:layout_marginLeft="75dp"
+            android:layout_marginRight="145dp"
+            android:layout_marginTop="35dp"
+            tools:text="138****4728"
+            />
+
+        <Button
+            android:id="@+id/btnRefuse"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="85dp"
+            android:background="@drawable/bg_btn_stroke_grey_radius_2dp"
+            android:text="拒绝"
+            android:textColor="@color/theme"
+            android:textSize="16sp"
+            />
+
+        <Button
+            android:id="@+id/btnAgree"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/bg_btn_theme_radius_2dp"
+            android:text="同意"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            />
+
+        <include layout="@layout/view_cutting_line_bottom_1px"></include>
+    </RelativeLayout>
+
+</RelativeLayout>

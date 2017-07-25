@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.quanmai.yiqu.ui.address.AddressManageActivity">
+    <include layout="@layout/common_title_view"
+        android:id="@+id/include"></include>
+    <ImageView
+        android:id="@+id/img01"
+        android:layout_below="@+id/include"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pic_address"/>
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/pulltorefresh_address"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/img01"
+        android:layout_alignParentLeft="true">
+        <com.quanmai.yiqu.ui.views.CustomListView
+            android:id="@+id/listview_address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@drawable/bg_cutting_line_left_15dp"
+            android:background="@color/white"/>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+    <LinearLayout
+        android:id="@+id/linear_add_address"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y80"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="@dimen/x24"
+        android:background="@drawable/bg_color_f08e1b_wide_1px_radius_4px">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_add_address"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加新地址"
+            android:layout_marginLeft="@dimen/x12"
+            android:textColor="@color/text_color_f08e1b"/>
+    </LinearLayout>
+
+</RelativeLayout>

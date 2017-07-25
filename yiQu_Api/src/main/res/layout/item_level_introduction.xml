@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/bg_default"
+              android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@android:color/transparent"
+        />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutLevel"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@android:color/white"
+        android:minHeight="65dp"
+        android:paddingLeft="15dp">
+
+        <Button
+            android:id="@+id/tvLevel"
+            android:layout_width="48dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_button_orange"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="16.7sp"
+            tools:text="Lv1"
+            />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="63dp"
+            android:layout_marginTop="10dp"
+            android:background="#cdcdcd"
+            ></View>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutIntroduce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="78dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            >
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

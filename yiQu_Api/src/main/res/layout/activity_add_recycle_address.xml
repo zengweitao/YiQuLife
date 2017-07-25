@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_default"
+    tools:context="com.quanmai.yiqu.ui.booking.AddRecycleAddressActivity">
+
+    <include layout="@layout/common_title_view"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:background="#ffffff"
+        android:layout_marginTop="5dp"
+        >
+
+        <TextView
+            android:id="@+id/textViewCommunity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="丽江花园"
+            android:textSize="17sp"
+            android:textColor="#575757"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:singleLine="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您所在的小区"
+            android:textSize="14sp"
+            android:textColor="#979797"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="9.5dp"
+            />
+
+        <TextView
+            android:id="@+id/textViewNotMyCommunity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不是我所在的小区？"
+            android:textSize="14sp"
+            android:textColor="#02aff3"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#cdcdcd"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="预约人姓名"
+            android:textSize="15sp"
+            android:textColor="#575757"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            />
+
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/edittextName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="输入姓名"
+            android:textSize="15sp"
+            android:textColorHint="#b4b4b4"
+            android:paddingLeft="15dp"
+            />
+
+        <ImageView
+            android:id="@+id/imageViewClearName"
+            android:layout_width="40dp"
+            android:layout_height="44dp"
+            android:src="@drawable/icon_clear_all"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#cdcdcd"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="预约人电话"
+            android:textSize="15sp"
+            android:textColor="#575757"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            />
+
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/edittextPhone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="输入电话"
+            android:textSize="15sp"
+            android:textColorHint="#b4b4b4"
+            android:paddingLeft="15dp"
+            android:inputType="phone"
+            />
+
+        <ImageView
+            android:id="@+id/imageViewClearPhone"
+            android:layout_width="40dp"
+            android:layout_height="44dp"
+            android:src="@drawable/icon_clear_all"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#cdcdcd"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="详细地址"
+            android:textSize="15sp"
+            android:textColor="#575757"
+            android:layout_marginTop="11.5dp"
+            />
+
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/edittextDetailedAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:minLines="3"
+            android:gravity="start"
+            android:textSize="15sp"
+            android:textColor="#575757"
+            android:hint="输入楼栋、楼层、门牌号"
+            android:textColorHint="#b4b4b4"
+            android:layout_marginLeft="31.5dp"
+            android:layout_marginTop="11.5dp"
+            />
+
+        <ImageView
+            android:id="@+id/imageViewClearAddress"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon_clear_all"
+            android:padding="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2dp"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

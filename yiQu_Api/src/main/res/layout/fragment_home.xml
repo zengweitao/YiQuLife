@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearParent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_default"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title_view"/>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <com.bigkoo.convenientbanner.ConvenientBanner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/bg_default"
+                app:canLoop="true"
+                />
+
+            <ImageView
+                android:id="@+id/imageViewBanner"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#f2f2f2"
+                android:scaleType="fitXY"
+                android:visibility="gone"
+                />
+
+            <ImageView
+                android:id="@+id/imageViewBanner2"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#f2f2f2"
+                android:scaleType="fitXY"
+                android:visibility="gone"
+                />
+
+            //中间icon列表
+            <com.quanmai.yiqu.common.widget.DraggableGridViewPager
+                android:id="@+id/draggable_grid_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="178dp"
+                android:background="@color/white"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"/>
+
+            <LinearLayout
+                android:id="@+id/llPoint"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@color/white"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp"
+                android:background="#ffffff"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="5dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/ic_rectangle_green"
+                    />
+
+                <TextView
+                    style="@style/TextView_style"
+                    android:layout_marginLeft="5dp"
+                    android:text="公共服务"
+                    android:textColor="#979797"
+                    android:textSize="15sp"
+                    />
+            </LinearLayout>
+
+            <include layout="@layout/view_cutting_line_1px"></include>
+
+            <com.quanmai.yiqu.common.view.MyGridView
+                android:id="@+id/gridViewServices"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_stroke_1px"
+                android:listSelector="@color/transparent"
+                android:numColumns="2"
+                android:scrollbars="none"
+                ></com.quanmai.yiqu.common.view.MyGridView>
+
+        </LinearLayout>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+</LinearLayout>

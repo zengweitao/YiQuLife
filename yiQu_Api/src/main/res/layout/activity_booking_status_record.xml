@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.quanmai.yiqu.ui.booking.BookingStatusRecordActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/theme"
+        >
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_btn_transparent"
+            android:onClick="finish"
+            android:paddingLeft="15.5dp"
+            android:paddingRight="15.5dp"
+            android:paddingTop="12.5dp"
+            android:paddingBottom="12.5dp"
+            android:src="@drawable/arrow_left_white" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/textViewGrabageRecycle"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="预约状态"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/textViewClassify"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="分类知识"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:background="@drawable/bg_booking_right_fill"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_btn_transparent"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/white"
+            android:text="预约记录"
+            android:textSize="17sp" />
+
+    </RelativeLayout>
+    <!--预约状态-->
+    <RelativeLayout
+        android:id="@+id/relativeStatusContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f2f2f2"
+        >
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <LinearLayout
+                android:id="@+id/linear_no_data"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="81dp"
+                    android:background="@drawable/bg_no_data"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:id="@+id/iv_no_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="没有数据"
+                    android:gravity="center"
+                    android:textColor="#d8d8d8"
+                    android:textSize="17sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    />
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/relativeContent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <ListView
+                    android:id="@+id/listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/linearLayoutBottom"
+                    android:divider="@null"
+                    android:cacheColorHint="@color/transparent"
+                    >
+                </ListView>
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutBottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_above="@+id/line"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="预约详情"
+                        android:textSize="14sp"
+                        android:textColor="#979797"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoutContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="#ffffff"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingBottom="10dp"
+                        >
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#cdcdcd"
+                    android:layout_above="@+id/relativeLayoutBottom"
+                    />
+                <LinearLayout
+                    android:id="@+id/relativeLayoutBottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="#ffffff"
+                    android:orientation="horizontal"
+                    android:layout_alignParentBottom="true"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoutEditAmount"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        >
+
+                        <ImageView
+                            android:layout_width="20.5dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/icon_booking_edit"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="修改数量"
+                            android:textSize="16sp"
+                            android:textColor="#575757"
+                            android:layout_marginLeft="4.5dp"
+                            />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#cdcdcd"/>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoutCancel"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        >
+
+                        <ImageView
+                            android:layout_width="20.5dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/icon_booking_cancle"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="取消预约"
+                            android:textSize="16sp"
+                            android:textColor="#575757"
+                            android:layout_marginLeft="4.5dp"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+    </RelativeLayout>
+    <!--webView-->
+    <FrameLayout
+        android:id="@+id/frameLayoutContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f2f2f2"
+        android:visibility="gone"
+        >
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </WebView>
+
+        <LinearLayout
+            android:id="@+id/linearNoData"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="81dp"
+                android:background="@drawable/bg_no_data"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:id="@+id/textViewNoData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="没有数据"
+                android:gravity="center"
+                android:textColor="#d8d8d8"
+                android:textSize="17sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                />
+
+        </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>

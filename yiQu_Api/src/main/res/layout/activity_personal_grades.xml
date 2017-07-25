@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/common_title_view" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/bg_default"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请选择评分"
+                android:textSize="18sp"
+                android:textColor="@color/text_color_default"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                />
+            <View
+                android:layout_width="110dp"
+                android:layout_height="1dp"
+                android:background="@color/theme"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <RadioGroup
+                android:id="@+id/radioGroup_personal_grade1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                >
+
+                <RadioButton
+                    android:id="@+id/radioButton_personal_grade1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="48dp"
+                    android:button="@null"
+                    android:background="@drawable/start_one"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"
+                    />
+
+                <RadioButton
+                    android:id="@+id/radioButton_personal_grade2"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:layout_height="48dp"
+                    android:button="@null"
+                    android:background="@drawable/start_two"
+                    android:gravity="center"
+                    />
+
+                <RadioButton
+                    android:id="@+id/radioButton_personal_grade3"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:layout_height="47.6dp"
+                    android:button="@null"
+                    android:background="@drawable/start_three"
+                    android:gravity="center"
+
+                    />
+
+                <RadioButton
+                    android:id="@+id/radioButton_personal_grade4"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:layout_height="47.6dp"
+                    android:button="@null"
+                    android:background="@drawable/start_four"
+                    android:gravity="center"
+                    />
+
+                <RadioButton
+                    android:id="@+id/radioButton_personal_grade5"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:layout_height="47.6dp"
+                    android:button="@null"
+                    android:background="@drawable/start_five"
+                    android:gravity="center"
+                    android:layout_marginRight="20dp"
+                    />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/radioGroup_personal_grade2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25.4dp"
+                android:orientation="horizontal"
+                >
+
+                <RadioButton
+                    android:id="@+id/radioButton_personal_grade6"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="47.6dp"
+                    android:button="@null"
+                    android:background="@drawable/start_six"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"
+                    />
+
+                <RadioButton
+                    android:id="@+id/radioButton_personal_grade7"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:layout_height="47.6dp"
+                    android:button="@null"
+                    android:background="@drawable/start_seven"
+                    android:gravity="center"
+                    />
+
+                <RadioButton
+                    android:id="@+id/radioButton_personal_grade8"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:layout_height="47.6dp"
+                    android:button="@null"
+                    android:background="@drawable/start_eight"
+                    android:gravity="center"
+
+                    />
+
+                <RadioButton
+                    android:id="@+id/radioButton_personal_grade9"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:layout_height="47.6dp"
+                    android:button="@null"
+                    android:background="@drawable/start_nine"
+                    android:gravity="center"
+
+                    />
+
+                <RadioButton
+                    android:id="@+id/radioButton_personal_grade10"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:layout_height="47.6dp"
+                    android:button="@null"
+                    android:background="@drawable/start_ten"
+                    android:gravity="center"
+                    android:layout_marginRight="20dp"
+                    />
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@drawable/bg_dotted_line"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="157.5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10.5dp"
+                android:layout_marginRight="10.5dp"
+                android:background="@drawable/bg_add_picture"
+                android:layout_marginBottom="15dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutPhoto_personal_grade"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/bg_add_picture"
+                    android:gravity="center"
+                    >
+
+                    <ImageView
+                        android:layout_width="43dp"
+                        android:layout_height="32dp"
+                        android:padding="20dp"
+                        android:background="@drawable/icon_photo"
+                        android:layout_gravity="center_horizontal"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="添加照片"
+                        android:textSize="12sp"
+                        android:textColor="#979797"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center_horizontal"
+                        />
+
+                </LinearLayout>
+
+
+
+                <!--<RelativeLayout
+                    android:id="@+id/relativeLayoutAddPicture_personal_grade"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+
+
+                </RelativeLayout>-->
+                <GridView
+                    android:id="@+id/gridView_personal_grade"
+                    android:layout_width="294dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:cacheColorHint="@color/transparent"
+                    android:columnWidth="135.5dp"
+                    android:gravity="center"
+                    android:listSelector="@color/transparent"
+                    android:numColumns="3"
+                    android:visibility="gone"
+                    android:horizontalSpacing="15dp"
+                    android:stretchMode="columnWidth" />
+
+                <!--<GridView
+                    android:id="@+id/gridView_personal_grade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:columnWidth="88dp"
+                    android:horizontalSpacing="10dp"
+                    android:stretchMode="columnWidth"
+                    android:descendantFocusability="afterDescendants">
+                </GridView>-->
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonSubmit_personal_grade"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/submit_score"
+            android:layout_marginTop="25dp"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.quanmai.yiqu.ui.grade.ScanResultActivity">
+
+    <include layout="@layout/common_title_view" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/bg_default"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="horizontal"
+                android:background="#ffffff"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="设备号"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_color_default"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewDeviceNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="CS541679083"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_color_default"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="15dp"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#cdcdcd"
+                android:layout_marginLeft="15dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="horizontal"
+                android:background="#ffffff"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="取袋日期"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_color_default"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewTakeDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="2016.03.22  21:28"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_color_default"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="15dp"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#cdcdcd"
+                android:layout_marginLeft="15dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="horizontal"
+                android:background="#ffffff"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="地址"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_color_default"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="南湖区22街60号"
+                    android:singleLine="true"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_color_default"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="15dp"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#cdcdcd" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="请选择评分"
+                    android:textSize="18sp"
+                    android:textColor="@color/text_color_default"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    />
+                <View
+                    android:layout_width="110dp"
+                    android:layout_height="1dp"
+                    android:background="@color/theme"
+                    android:layout_gravity="center_horizontal"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/radioButton1"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="48dp"
+                        android:button="@null"
+                        android:background="@drawable/start_one"
+                        android:gravity="center"
+                        android:layout_marginLeft="20dp"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/radioButton2"
+                        android:layout_width="0dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:layout_height="48dp"
+                        android:button="@null"
+                        android:background="@drawable/start_two"
+                        android:gravity="center"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/radioButton3"
+                        android:layout_width="0dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:layout_height="47.6dp"
+                        android:button="@null"
+                        android:background="@drawable/start_three"
+                        android:gravity="center"
+
+                        />
+
+                    <RadioButton
+                        android:id="@+id/radioButton4"
+                        android:layout_width="0dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:layout_height="47.6dp"
+                        android:button="@null"
+                        android:background="@drawable/start_four"
+                        android:gravity="center"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/radioButton5"
+                        android:layout_width="0dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:layout_height="47.6dp"
+                        android:button="@null"
+                        android:background="@drawable/start_five"
+                        android:gravity="center"
+                        android:layout_marginRight="20dp"
+                        />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/radioGroup2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25.4dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/radioButton6"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="47.6dp"
+                        android:button="@null"
+                        android:background="@drawable/start_six"
+                        android:gravity="center"
+                        android:layout_marginLeft="20dp"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/radioButton7"
+                        android:layout_width="0dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:layout_height="47.6dp"
+                        android:button="@null"
+                        android:background="@drawable/start_seven"
+                        android:gravity="center"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/radioButton8"
+                        android:layout_width="0dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:layout_height="47.6dp"
+                        android:button="@null"
+                        android:background="@drawable/start_eight"
+                        android:gravity="center"
+
+                        />
+
+                    <RadioButton
+                        android:id="@+id/radioButton9"
+                        android:layout_width="0dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:layout_height="47.6dp"
+                        android:button="@null"
+                        android:background="@drawable/start_nine"
+                        android:gravity="center"
+
+                        />
+
+                    <RadioButton
+                        android:id="@+id/radioButton10"
+                        android:layout_width="0dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:layout_height="47.6dp"
+                        android:button="@null"
+                        android:background="@drawable/start_ten"
+                        android:gravity="center"
+                        android:layout_marginRight="20dp"
+                        />
+                </RadioGroup>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@drawable/bg_dotted_line"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="请点评"
+                        android:layout_marginTop="15dp"
+                        android:textColor="@color/text_color_default"
+                        android:textSize="18sp"/>
+                    <View
+                        android:layout_width="70dp"
+                        android:layout_height="1dp"
+                        android:background="@color/theme"
+                        android:layout_gravity="center_horizontal"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp">
+                        <Button
+                            android:padding="10dp"
+                            android:id="@+id/button_label_01"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="袋中含有有害垃圾"
+                            android:textSize="16sp"
+                            android:textColor="@color/text_color_default"
+                            android:background="@drawable/bg_add_picture" />
+                        <Button
+                            android:padding="10dp"
+                            android:id="@+id/button_label_02"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="袋中含有可回收垃圾"
+                            android:textSize="16sp"
+                            android:textColor="@color/text_color_default"
+                            android:background="@drawable/bg_add_picture"
+                            android:layout_marginLeft="10dp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp">
+                        <Button
+                            android:padding="10dp"
+                            android:id="@+id/button_label_03"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="垃圾袋投放错误"
+                            android:textSize="16sp"
+                            android:textColor="@color/text_color_default"
+                            android:background="@drawable/bg_add_picture"
+                            />
+                        <Button
+                            android:padding="10dp"
+                            android:id="@+id/button_label_04"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="厨余垃圾中含有其他垃圾"
+                            android:textSize="16sp"
+                            android:textColor="@color/text_color_default"
+                            android:background="@drawable/bg_add_picture"
+                            android:layout_marginLeft="10dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/bg_add_picture"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp">
+                        <EditText
+                            android:layout_marginLeft="5dp"
+                            android:id="@+id/edittext_comment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="10"
+                            android:hint="请在此输入50字以内评论！"
+                            android:background="@null"
+                            android:padding="5dp"
+                            />
+                        <!--<Button
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="清除"/>-->
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@drawable/bg_dotted_line"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayoutAddPicture"
+                    android:layout_width="match_parent"
+                    android:layout_height="157.5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="47.5dp"
+                    android:layout_marginRight="47.5dp"
+                    android:background="@drawable/bg_add_picture"
+                    android:layout_marginBottom="15dp"
+                    >
+                    <LinearLayout
+                        android:id="@+id/linearLayoutPhoto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_centerInParent="true"
+                        >
+
+                        <ImageView
+                            android:layout_width="43dp"
+                            android:layout_height="32dp"
+                            android:background="@drawable/icon_photo"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="添加照片"
+                            android:textSize="12sp"
+                            android:textColor="#979797"
+                            android:layout_marginTop="5dp"
+                            />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/buttonSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/submit_score"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="20dp"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

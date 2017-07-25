@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/transpant_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    <RelativeLayout
+        android:id="@+id/rlClassification"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="分类评分记录"
+                android:layout_marginLeft="15dp"
+                android:textSize="17sp"
+                android:textColor="@color/text_color_default"
+                android:layout_weight="1"
+                />
+
+            <ImageView
+                android:layout_width="7dp"
+                android:layout_height="12dp"
+                android:background="@drawable/arrow_left"
+                android:layout_marginRight="15dp"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/text_color_cdcdcd"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlEquipment"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="设施评分记录"
+                android:layout_marginLeft="15dp"
+                android:textSize="17sp"
+                android:textColor="@color/text_color_default"
+                android:layout_weight="1"
+                />
+
+            <ImageView
+                android:layout_width="7dp"
+                android:layout_height="12dp"
+                android:background="@drawable/arrow_left"
+                android:layout_marginRight="15dp"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/text_color_cdcdcd"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlClean"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="清运评分记录"
+                android:layout_marginLeft="15dp"
+                android:textSize="17sp"
+                android:textColor="@color/text_color_default"
+                android:layout_weight="1"
+                />
+
+            <ImageView
+                android:layout_width="7dp"
+                android:layout_height="12dp"
+                android:background="@drawable/arrow_left"
+                android:layout_marginRight="15dp"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/text_color_cdcdcd"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlPublish"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/text_color_cdcdcd"
+            android:layout_alignParentBottom="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="宣传评分记录"
+                android:layout_marginLeft="15dp"
+                android:textSize="17sp"
+                android:textColor="@color/text_color_default"
+                android:layout_weight="1"
+                />
+
+            <ImageView
+                android:layout_width="7dp"
+                android:layout_height="12dp"
+                android:background="@drawable/arrow_left"
+                android:layout_marginRight="15dp"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+    
+</LinearLayout>

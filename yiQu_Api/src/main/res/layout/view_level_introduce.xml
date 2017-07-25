@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        >
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="3dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/bg_theme_color_round"
+            ></View>
+
+        <TextView
+            android:id="@+id/textViewLevelIntroduce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            tools:text="签到可领取20积分"
+            android:textColor="#979797"
+            android:textSize="11sp"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

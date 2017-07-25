@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/transpant_bg"
+                android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="482dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/sing_in_bg"
+        >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="86dp"
+            android:text="签到成功"
+            android:textColor="#48c299"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/textViewLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textColor="#6a6a6a"
+            android:textSize="18sp"
+            tools:text="+10积分"
+            />
+
+        <TextView
+            android:id="@+id/textViewExperience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewLeft"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2.5dp"
+            android:textColor="#6a6a6a"
+            android:textSize="18sp"
+            tools:text="+10经验"
+            />
+
+        <RelativeLayout
+            android:layout_width="195dp"
+            android:layout_height="195dp"
+            android:layout_below="@+id/textViewExperience"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.quanmai.yiqu.common.widget.CircleView
+                    android:id="@+id/circleViewSign"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/textViewSign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#575757"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:text="已连续签到"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewSignDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#575757"
+                    android:textSize="18sp"
+                    tools:text="231天"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewSignIntegral"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#575757"
+                    android:textSize="15sp"
+                    tools:text="积分：6000"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="等级："
+                        android:textColor="#575757"
+                        android:textSize="15sp"
+                        />
+
+                    <Button
+                        android:id="@+id/tvLevel"
+                        android:layout_width="23dp"
+                        android:layout_height="12dp"
+                        android:background="@drawable/bg_button_orange"
+                        android:gravity="center"
+                        android:text="LV1"
+                        android:textColor="@color/white"
+                        android:textSize="8sp"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/buttonConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/sign_btn_bg"
+            android:text="确定"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

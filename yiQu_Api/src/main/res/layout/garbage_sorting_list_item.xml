@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="#ffffff"
+        >
+
+        <ImageView
+            android:id="@+id/imageViewCover"
+            android:layout_width="74.5dp"
+            android:layout_height="74.5dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toLeftOf="@+id/buttonCheck"
+            android:layout_toRightOf="@+id/imageViewCover"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5.6dp"
+            >
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="垃圾分类"
+                android:textColor="#6d6d6d"
+                android:textSize="14sp"
+                android:singleLine="true"
+                />
+
+            <TextView
+                android:id="@+id/textViewDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="让小狸来告诉你垃圾怎么分类！"
+                android:textSize="13sp"
+                android:textColor="#a5a5a5"
+                android:layout_marginTop="15dp"
+                android:singleLine="true"
+                />
+
+            <TextView
+                android:id="@+id/textViewCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="浏览次数：3781"
+                android:textSize="11sp"
+                android:textColor="#ffb4b4"
+                android:layout_marginTop="11dp"
+                android:visibility="invisible"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonCheck"
+            android:layout_width="60dp"
+            android:layout_height="20.5dp"
+            android:background="@drawable/garbage_sorting_btn_bg"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            />
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#e7e7e7"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

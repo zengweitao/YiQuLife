@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme"
+    tools:context="com.quanmai.yiqu.ui.Around.ShakeActivity">
+
+    <include layout="@layout/common_title_view"/>
+
+   <Button
+       android:id="@+id/buttonMyCoupon"
+       android:layout_width="match_parent"
+       android:layout_height="49dp"
+       android:background="@drawable/white_bg_shape"
+       android:text="我的优惠券（0）"
+       android:textSize="18sp"
+       android:textColor="@color/theme"
+       android:layout_alignParentBottom="true"
+       android:layout_marginBottom="15dp"
+       android:layout_marginLeft="20dp"
+       android:layout_marginRight="20dp"
+       />
+    <!--摇一摇主界面-->
+    <RelativeLayout
+        android:id="@+id/relativeLayoutShake"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttonMyCoupon"
+        android:layout_marginTop="44dp"
+
+        >
+        <TextView
+            android:id="@+id/textViewChanges"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="你还有2次疯摇机会"
+            android:textSize="24sp"
+            android:textColor="#f7f2f2"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="22.5dp"
+            />
+
+        <ImageView
+            android:id="@+id/imageViewShake"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/textViewChanges"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/shake_anim"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="28dp"
+            android:layout_marginLeft="38dp"
+            android:layout_marginRight="38dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutCoupon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttonMyCoupon"
+        android:layout_marginTop="44dp"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/textViewCouponChanges"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="你还有2次疯摇机会"
+            android:textSize="24sp"
+            android:textColor="#f7f2f2"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="57dp"
+            />
+        <!--优惠券卡片-->
+        <LinearLayout
+            android:id="@+id/linearLayoutCoupon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="25dp"
+            android:orientation="vertical"
+            android:background="@drawable/bg_shake_coupon"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="gone"
+            >
+
+            <ImageView
+                android:id="@+id/imageViewBg"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginTop="15dp"
+                android:scaleType="centerCrop"
+                />
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="C85芝士培根帕尼尼+醇豆浆（热）"
+                android:layout_marginTop="15dp"
+                android:textSize="17sp"
+                android:textColor="#454545"
+                android:maxLines="2"
+                android:ellipsize="start"
+                />
+
+            <TextView
+                android:id="@+id/textViewPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="￥10"
+                android:textSize="17sp"
+                android:textColor="#fe5246"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:id="@+id/textViewDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="有效期至2016年06月05日"
+                android:textSize="14sp"
+                android:textColor="#979797"
+                android:layout_marginTop="5dp"
+                />
+
+            <Button
+                android:id="@+id/buttonFetchCoupon"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:background="@drawable/bg_green_btn_little"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="29dp"
+                android:text="立即领取"
+                android:textSize="18sp"
+                android:textColor="#fff"
+                />
+
+        </LinearLayout>
+        <!--积分卡片-->
+        <LinearLayout
+            android:id="@+id/linearLayoutIntegration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="25dp"
+            android:orientation="vertical"
+            android:background="@drawable/bg_shake_coupon"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="gone"
+            >
+            
+            <TextView
+                android:id="@+id/textViewIntegration"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/bg_shake_integration"
+                android:layout_marginTop="65dp"
+                tools:text="奖励积分10分"
+                android:textSize="32sp"
+                android:textColor="#fdd701"
+                android:gravity="center"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/textViewTips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="恭喜您获得奖励积分"
+                android:textSize="18sp"
+                android:textColor="#ea6143"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="35dp"
+                />
+            <Button
+                android:id="@+id/buttonFetchIntegration"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:background="@drawable/bg_green_btn_little"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="29dp"
+                android:text="好的"
+                android:textSize="18sp"
+                android:textColor="#fff"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

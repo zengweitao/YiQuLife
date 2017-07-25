@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color_e5e7ea"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_title_view" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/_textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="请选择起始日期"
+            android:textColor="#4d4d4d"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_start_date"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@id/_textview1"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_selece_date_tv"
+            android:drawableRight="@drawable/icon_arrow_down"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:textColor="#44b5fb"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/_textview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_start_date"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="请选择结束日期"
+            android:textColor="#4d4d4d"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_end_date"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@id/_textview2"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_selece_date_tv"
+            android:drawableRight="@drawable/icon_arrow_down"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:textColor="#44b5fb"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_quary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/green_btn"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="查  询"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</LinearLayout>

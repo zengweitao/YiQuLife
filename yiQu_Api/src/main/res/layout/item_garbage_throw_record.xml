@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+                xmlns:tools="http://schemas.android.com/tools"
+              android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_height="62.5dp">
+        <TextView
+            android:id="@+id/tvName"
+            style="@style/TextView_style"
+            android:textSize="15sp"
+            android:layout_centerVertical="false"
+            tools:text="塑料瓶"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_below="@id/tvName"
+            android:id="@+id/tvStatus"
+            android:layout_marginTop="5dp"
+            style="@style/TextView_style"
+            android:layout_centerVertical="false"
+            android:textColor="@color/text_color_B5B5B5"
+            android:textSize="12sp"
+            tools:text="未检查"/>
+
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            style="@style/TextView_style"
+            android:textColor="@color/text_color_B5B5B5"
+            android:textSize="12sp"
+            tools:text="12-11 09:12"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

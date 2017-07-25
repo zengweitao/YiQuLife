@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    tools:context="com.quanmai.yiqu.ui.booking.BookingStatusActivity">
+
+    <include layout="@layout/common_title_view"
+        android:id="@+id/include_booking"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include_booking">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linear_no_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/y450"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="81dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_no_data" />
+
+                <TextView
+                    android:id="@+id/iv_no_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="没有数据"
+                    android:textColor="#d8d8d8"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/relativeContent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.quanmai.yiqu.ui.views.CustomListView
+                    android:id="@+id/listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:cacheColorHint="@color/transparent"
+                    android:divider="@null" />
+
+                <LinearLayout
+                    android:id="@+id/relative_order_userMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x20"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/relative_order_addess"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/y34">
+
+                        <TextView
+                            android:id="@+id/textView_order_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="@dimen/x24"
+                            android:layout_marginTop="@dimen/y34"
+                            android:ellipsize="middle"
+                            android:maxEms="4"
+                            android:text="逗逗兜"
+                            android:textSize="@dimen/y30" />
+
+                        <TextView
+                            android:id="@+id/textView_order_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignTop="@+id/textView_order_name"
+                            android:layout_marginLeft="@dimen/x154"
+                            android:text="12345678900"
+                            android:textSize="@dimen/y30" />
+
+
+                        <TextView
+                            android:id="@+id/textView_order_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@+id/textView_order_phone"
+                            android:layout_below="@+id/textView_order_phone"
+                            android:layout_marginTop="@dimen/y12"
+                            android:text="易趣科技"
+                            android:textColor="@color/color_999999"
+                            android:textSize="@dimen/y30" />
+
+                        <TextView
+                            android:id="@+id/textView_order_dataAndtime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@+id/textView_order_address"
+                            android:layout_below="@+id/textView_order_address"
+                            android:layout_marginTop="@dimen/y12"
+                            android:text="7月5日 周三 全天"
+                            android:textColor="@color/color_999999"
+                            android:textSize="@dimen/y30"
+                            android:visibility="gone"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/linearLayoutBottom"
+                    android:layout_marginTop="@dimen/x20"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/y34"
+                        android:paddingLeft="@dimen/x24"
+                        android:paddingTop="@dimen/y34"
+                        android:text="废品照片" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerview_recycle_photo"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x154"
+                        android:layout_marginBottom="@dimen/y50"
+                        android:layout_marginLeft="@dimen/x24"
+                        android:layout_marginRight="@dimen/x24">
+
+                    </android.support.v7.widget.RecyclerView>
+
+                </LinearLayout>
+
+                <com.quanmai.yiqu.ui.views.CustomFlowLayout
+                    android:id="@+id/mobile_flow_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x24"
+                    android:layout_marginRight="@dimen/x24"
+                    android:layout_marginTop="@dimen/y20" />
+
+                <TextView
+                    android:id="@+id/textview_cancel"
+                    android:layout_width="@dimen/x350"
+                    android:layout_height="@dimen/y80"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="4.5dp"
+                    android:layout_marginTop="@dimen/y100"
+                    android:layout_marginBottom="@dimen/y100"
+                    android:background="@drawable/bg_color_d9d9d9_wide_1px_radius_8px"
+                    android:gravity="center"
+                    android:text="取消预约"
+                    android:textColor="#575757"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textview_order"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y80"
+        android:background="@color/theme"
+        android:text="接 单"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

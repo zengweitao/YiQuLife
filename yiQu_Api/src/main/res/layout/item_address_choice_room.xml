@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_default"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvBuildNo"
+        style="@style/TextView_style"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/text_color_48c299"
+        android:textSize="14sp"
+        android:visibility="gone"
+        tools:text="1层" />
+
+    <RelativeLayout
+        android:id="@+id/relative_visibility"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white"
+        android:paddingLeft="15dp">
+
+        <TextView
+            android:id="@+id/tvRoomNo"
+            style="@style/TextView_style"
+            tools:text="富春玫瑰园"
+            />
+
+        <include layout="@layout/view_cutting_line_bottom_1px"></include>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

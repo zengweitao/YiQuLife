@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        >
+
+        <ImageView
+            android:id="@+id/imageViewGoods"
+            android:layout_width="120dp"
+            android:layout_height="85dp"
+            android:scaleType="centerCrop"
+            tools:background="@drawable/ic_rectangle_green"
+            />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutGoods"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            >
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/text_color_default"
+                android:textSize="15sp"
+                tools:text="自用iPhone6 港版64g 还有一个多月保修 八成新"
+                />
+
+            <TextView
+                android:id="@+id/textViewStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/textViewAccessCount"
+                android:layout_marginBottom="5dp"
+                android:singleLine="true"
+                android:textColor="@color/text_color_green"
+                android:textSize="12sp"
+                tools:text="展示中"
+                />
+
+            <TextView
+                android:id="@+id/textViewDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textViewStatus"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/textViewStatus"
+                android:singleLine="true"
+                android:textColor="@color/text_color_hint"
+                android:textSize="12sp"
+                tools:text="发布于2016.03.18"
+                />
+
+            <TextView
+                android:id="@+id/textViewAccessCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:singleLine="true"
+                android:textColor="@color/text_color_hint"
+                android:textSize="12sp"
+                tools:text="浏览 5 次"
+                />
+
+
+            <TextView
+                android:id="@+id/buttonHandle"
+                android:layout_width="55dp"
+                android:layout_height="25dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/bg_btn_green_stroke"
+                android:gravity="center"
+                android:text="操作"
+                android:textColor="@color/theme"
+                android:textSize="12sp"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/view_cutting_line_1px"></include>
+
+</LinearLayout>

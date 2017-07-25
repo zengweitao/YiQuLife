@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+    <SurfaceView
+        android:id="@+id/preview_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.quanmai.yiqu.common.zxing.view.ViewfinderView
+        android:id="@+id/viewfinder_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include layout="@layout/common_title_view" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/black"
+        android:paddingTop="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:id="@+id/llayout_inputcode">
+
+            <ImageView
+                android:id="@+id/img_inputcode"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:background="@drawable/ic_manual_input_off"/>
+            <Button
+                android:id="@+id/button_inputcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手动输入"
+                android:textColor="@color/white"
+                android:background="#00000000"
+                android:clickable="false"
+                android:focusable="false"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:id="@+id/llayout_openlight">
+            <ImageView
+                android:id="@+id/img_openlight"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:background="@drawable/ic_flashlight_off"/>
+
+            <Button
+                android:id="@+id/button_openlight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="打开手电筒"
+                android:textColor="@color/white"
+                android:background="#00000000"
+                android:focusable="false"
+                android:clickable="false"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

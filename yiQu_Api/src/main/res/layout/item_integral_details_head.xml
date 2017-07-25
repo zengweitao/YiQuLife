@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:toos="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            >
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:background="#f5a623"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/textViewDateTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="2016.03"
+                    android:textSize="16sp"
+                    android:textColor="#575757"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="0.5dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/textViewTotalGetIntegral"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="已获得积分  30"
+                        android:textSize="10sp"
+                        android:textColor="#575757"
+                        />
+
+                    <TextView
+                        android:id="@+id/textViewTotalUsedIntegral"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="已使用积分  10"
+                        android:textSize="10sp"
+                        android:textColor="#575757"
+                        android:layout_marginLeft="10dp"
+                        />
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#cdcdcd"/>
+
+        <LinearLayout
+            android:id="@+id/linearContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="69dp"
+                android:background="@color/white"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+    <TextView
+        android:id="@+id/tvGrade"
+        style="@style/TextView_style"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/text_color_F5A623"
+        android:textSize="17sp"
+        tools:text="总评分：9"
+        />
+
+    <TextView
+        android:id="@+id/tvEquipment"
+        style="@style/TextView_style"
+        android:layout_below="@+id/tvGrade"
+        android:layout_centerVertical="false"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="14sp"
+        tools:text="设施点A—垃圾桶"
+        />
+
+    <TextView
+        android:id="@+id/tvDate"
+        style="@style/TextView_style"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/text_color_979797"
+        android:textSize="13sp"
+        tools:text="2016.09.28  19:22"
+        />
+
+    <View
+        android:layout_width="7dp"
+        android:layout_height="12dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/ic_arrow_right"
+        ></View>
+
+</RelativeLayout>

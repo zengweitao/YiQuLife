@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_default"
+    android:orientation="vertical"
+    tools:context="com.quanmai.yiqu.ui.mys.realname.AddressChoiceActivity">
+
+    <include layout="@layout/common_title_view"></include>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:id="@+id/flSearch"
+        android:background="@color/theme" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="50dp"
+            android:focusableInTouchMode="true"
+            android:background="@drawable/bg_white_radius_15dp" >
+
+            <EditText
+                android:id="@+id/edtSearchContent"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:hint="请输入关键字搜索"
+                android:imeOptions="actionSearch"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:inputType="text"
+                android:textColor="#6c6c6c"
+                android:textColorHint="#b8b8b8"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/imgClear"
+                android:layout_width="35dp"
+                android:layout_height="30dp"
+                android:padding="7dp"
+                android:src="@drawable/icon_clear" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btnSearch"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_gravity="right"
+            android:background="@drawable/bg_btn_transparent"
+            android:padding="13dp"
+            android:src="@drawable/icon_seach_0" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlSearch"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/bg_white_radius_4dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/ivSearch"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/bg_btn_transparent"
+                android:src="@drawable/ic_search"/>
+
+            <TextView
+                android:id="@+id/tvSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/ivSearch"
+                android:background="@color/transparent"
+                android:hint="搜索小区"
+                android:singleLine="true"
+                android:textColorHint="@color/text_color_hint"
+                android:textSize="14sp"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/view_cutting_line_1px"></include>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshExpandableListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/expandableListView_chooseroom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:listSelector="@color/transparent"
+        ptr:ptrShowIndicator="false">
+    </com.handmark.pulltorefresh.library.PullToRefreshExpandableListView>
+
+</LinearLayout>

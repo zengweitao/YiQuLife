@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.quanmai.yiqu.ui.grade.GradeEquipmentActivity">
+
+    <include layout="@layout/common_title_view"></include>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:id="@+id/llCommunity"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/tvCommunity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:textColor="@color/text_color_default"
+                    android:textSize="17sp"
+                    tools:text="安徽桂花园"
+                    />
+
+                <TextView
+                    android:id="@+id/tvEQ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:textColor="@color/text_color_979797"
+                    android:textSize="14sp"
+                    tools:text="设施点A-垃圾桶"
+                    />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="7dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/arrow_left"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/text_color_cdcdcd"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="135.5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            >
+
+            <RelativeLayout
+                android:id="@+id/rlAddPicture"
+                android:layout_width="match_parent"
+                android:layout_height="135.5dp"
+                android:background="@drawable/bg_btn_transparent"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+
+                    <ImageView
+                        android:layout_width="47.5dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/camera_bg"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="点此添加图片"
+                        android:textColor="#575757"
+                        android:textSize="17sp"
+                        />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/text_color_cdcdcd"/>
+            </RelativeLayout>
+
+            <com.quanmai.yiqu.common.widget.MyGridView
+                android:id="@+id/gridview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:cacheColorHint="@color/transparent"
+                android:columnWidth="135.5dp"
+                android:gravity="center"
+                android:listSelector="@color/transparent"
+                android:numColumns="3"
+                android:paddingBottom="15dp"
+                android:paddingLeft="17.5dp"
+                android:paddingRight="17.5dp"
+                android:paddingTop="20dp"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="22.5dp"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="15dp"
+                android:background="#02AFF3"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="清运评分"
+                android:textColor="@color/text_color_979797"
+                android:textSize="15sp"
+                />
+        </LinearLayout>
+
+        <include layout="@layout/view_cutting_line_1px"></include>
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:listSelector="@color/transparent"
+            android:paddingBottom="10dp">
+        </com.handmark.pulltorefresh.library.PullToRefreshListView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/theme"
+        android:text="提交评分"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        />
+
+</LinearLayout>

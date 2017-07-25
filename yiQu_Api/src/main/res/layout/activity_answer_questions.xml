@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.quanmai.yiqu.ui.fuli.AnswerQuestionsActivity">
+
+    <include layout="@layout/common_title_view" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f2f2f2"
+        >
+
+        <ImageView
+            android:id="@+id/imageViewContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <TextView
+            android:id="@+id/iv_no_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:id="@+id/relativeLayoutContent"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/textViewSubject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="请选出所有的厨余垃圾"
+                    android:textSize="18sp"
+                    android:textColor="#575757"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="15dp"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewTips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="#979797"
+                    tools:text="小提示：厨余垃圾是指居民日常生活及食品加工、饮食服务、单位供餐等活动中产生的垃圾。"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <GridView
+                    android:id="@+id/gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:cacheColorHint="@color/transparent"
+                    android:horizontalSpacing="15dp"
+                    android:listSelector="@color/transparent"
+                    android:numColumns="3"
+                    android:scrollbars="none"
+                    android:verticalSpacing="25dp"
+                    android:layout_marginTop="15dp"
+                    >
+                </GridView>
+
+                <TextView
+                    android:id="@+id/textViewAnswer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="漏选2题"
+                    android:textSize="25sp"
+                    android:textColor="#fffc69"
+                    android:layout_centerHorizontal="true"
+                    android:layout_above="@+id/linearButton"
+                    android:layout_marginBottom="10dp"
+                    android:visibility="gone"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/linearButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    >
+
+                    <Button
+                        android:id="@+id/buttonSkip"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="49dp"
+                        android:background="@drawable/bg_button_white"
+                        android:text="跳过此题"
+                        android:textColor="#6a6a6a"
+                        android:textSize="18sp"
+                        android:layout_marginRight="15dp"
+                        />
+
+                    <Button
+                        android:id="@+id/buttonNext"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="49dp"
+                        android:background="@drawable/bg_button"
+                        android:text="提交答案"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textViewChanges"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                tools:text="本月还可以领取 50 个福袋"
+                android:textSize="15sp"
+                android:textColor="#6a6a6a"
+                android:layout_marginBottom="15dp"
+                />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+
+
+</LinearLayout>

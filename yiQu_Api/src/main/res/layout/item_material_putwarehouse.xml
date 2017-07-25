@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y78">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y78"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvTime"
+            style="@style/TextView_style"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:singleLine="false"
+            android:text="时间"
+            android:textSize="@dimen/y28"
+            android:textColor="@color/text_color_333333"/>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/text_color_cdcdcd"
+            ></View>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@color/color_F3F4F9">
+            <TextView
+                android:id="@+id/tvAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="数量/类型"
+                android:singleLine="false"
+                android:textSize="@dimen/y28"
+                android:textColor="@color/text_color_333333" />
+            <TextView
+                android:id="@+id/tvType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="数量/类型"
+                android:singleLine="false"
+                android:textSize="@dimen/y28"
+                android:textColor="@color/text_color_333333"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/text_color_cdcdcd"
+            ></View>
+
+        <TextView
+            android:id="@+id/tvBagCode"
+            style="@style/TextView_style"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:singleLine="false"
+            android:text="首袋码"
+            android:textSize="@dimen/y28"
+            android:textColor="@color/text_color_333333" />
+
+    </LinearLayout>
+</RelativeLayout>
+
+

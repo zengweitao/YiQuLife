@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#f2f2f2"
+              android:orientation="vertical">
+    <!--<com.quanmai.yiqu.common.widget.BannerLayout-->
+        <!--android:id="@+id/banner"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="150dp"-->
+        <!--android:background="#f2f2f2"-->
+        <!--app:autoPlayDuration="3000"-->
+        <!--app:indicatorMargin="10dp"-->
+        <!--app:indicatorPosition="rightBottom"-->
+        <!--app:indicatorShape="oval"-->
+        <!--app:indicatorSpace="3dp"-->
+        <!--app:scrollDuration="500"-->
+        <!--app:selectedIndicatorColor="#48c299"-->
+        <!--app:selectedIndicatorHeight="6dp"-->
+        <!--app:selectedIndicatorWidth="6dp"-->
+        <!--app:unSelectedIndicatorColor="#99ffffff"-->
+        <!--app:unSelectedIndicatorHeight="6dp"-->
+        <!--app:unSelectedIndicatorWidth="6dp"-->
+        <!--/>-->
+    <com.bigkoo.convenientbanner.ConvenientBanner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#f2f2f2"
+        app:canLoop="true"
+        />
+    <ImageView
+        android:id="@+id/imageViewRule"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#f2f2f2"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        />
+
+    <!--2*4菜单-->
+    <!--<TableLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:stretchColumns="*"-->
+        <!--android:background="#ffffff"-->
+        <!-->-->
+
+        <!--<TableRow>-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_height="89dp"-->
+                <!-->-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/iv_house_appliances"-->
+                    <!--android:layout_width="50dp"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:background="@drawable/ic_household_appliances"-->
+                    <!--/>-->
+
+                <!--<TextView-->
+                    <!--style="@style/TextView_style"-->
+                    <!--android:layout_below="@+id/iv_house_appliances"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--android:text="家用电器"-->
+                    <!--/>-->
+            <!--</RelativeLayout>-->
+
+            <!--<RelativeLayout>-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/iv_transportation"-->
+                    <!--android:layout_width="50dp"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:background="@drawable/ic_transportation"-->
+                    <!--/>-->
+
+                <!--<TextView-->
+                    <!--style="@style/TextView_style"-->
+                    <!--android:layout_below="@+id/iv_transportation"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--android:text="交通工具"-->
+                    <!--/>-->
+            <!--</RelativeLayout>-->
+
+            <!--<RelativeLayout>-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/iv_phone"-->
+                    <!--android:layout_width="50dp"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:background="@drawable/ic_phone"-->
+                    <!--/>-->
+
+                <!--<TextView-->
+                    <!--style="@style/TextView_style"-->
+                    <!--android:layout_below="@+id/iv_phone"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--android:text="手机"-->
+                    <!--/>-->
+            <!--</RelativeLayout>-->
+
+            <!--<RelativeLayout>-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/iv_clothes"-->
+                    <!--android:layout_width="50dp"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:background="@drawable/ic_clothes"-->
+                    <!--/>-->
+
+                <!--<TextView-->
+                    <!--style="@style/TextView_style"-->
+                    <!--android:layout_below="@+id/iv_clothes"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--android:text="服装"-->
+                    <!--/>-->
+            <!--</RelativeLayout>-->
+        <!--</TableRow>-->
+
+        <!--<TableRow>-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_height="89dp"-->
+                <!-->-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/iv_digital_products"-->
+                    <!--android:layout_width="50dp"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:background="@drawable/ic_digital_products"-->
+                    <!--/>-->
+
+                <!--<TextView-->
+                    <!--style="@style/TextView_style"-->
+                    <!--android:layout_below="@+id/iv_digital_products"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--android:text="数码"-->
+                    <!--/>-->
+            <!--</RelativeLayout>-->
+
+            <!--<RelativeLayout>-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/iv_commodity"-->
+                    <!--android:layout_width="50dp"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:background="@drawable/ic_commodity"-->
+                    <!--/>-->
+
+                <!--<TextView-->
+                    <!--style="@style/TextView_style"-->
+                    <!--android:layout_below="@+id/iv_commodity"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--android:text="日用品"-->
+                    <!--/>-->
+            <!--</RelativeLayout>-->
+
+            <!--<RelativeLayout>-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/iv_books"-->
+                    <!--android:layout_width="50dp"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:background="@drawable/ic_books"-->
+                    <!--/>-->
+
+                <!--<TextView-->
+                    <!--style="@style/TextView_style"-->
+                    <!--android:layout_below="@+id/iv_books"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--android:text="手机"-->
+                    <!--/>-->
+            <!--</RelativeLayout>-->
+
+            <!--<RelativeLayout>-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/iv_pet"-->
+                    <!--android:layout_width="50dp"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:background="@drawable/ic_pet"-->
+                    <!--/>-->
+
+                <!--<TextView-->
+                    <!--style="@style/TextView_style"-->
+                    <!--android:layout_below="@+id/iv_pet"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--android:text="服装"-->
+                    <!--/>-->
+            <!--</RelativeLayout>-->
+        <!--</TableRow>-->
+    <!--</TableLayout>-->
+    <com.quanmai.yiqu.common.widget.DraggableGridViewPager
+        android:id="@+id/draggable_grid_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="178dp"
+        android:background="@color/white"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" />
+
+    <LinearLayout
+        android:id="@+id/lt_focus"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+    </LinearLayout>
+
+    <include layout="@layout/view_cutting_line_1px"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        >
+
+        <ImageView
+            android:layout_width="5dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/ic_rectangle_green"
+            />
+
+        <TextView
+            style="@style/TextView_style"
+            android:layout_marginLeft="5dp"
+            android:text="最新闲置"
+            android:textSize="15sp"
+            android:textColor="#979797"
+            />
+    </LinearLayout>
+
+    <include layout="@layout/view_cutting_line_1px"></include>
+
+</LinearLayout>

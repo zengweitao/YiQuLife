@@ -1,0 +1,206 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#e5e7ea"
+              android:orientation="vertical">
+
+    <include layout="@layout/common_title_view"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/relative_head_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingRight="15dp"
+                >
+
+                <com.quanmai.yiqu.common.widget.XCRoundImageView
+                    android:id="@+id/iv_head"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="15dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/default_header"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:drawablePadding="10dp"
+                    android:text="头像"
+                    android:textColor="@color/text_color_default"
+                    android:textSize="16sp"/>
+
+                <View
+                    android:layout_width="7dp"
+                    android:layout_height="12dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_arrow_right"
+                    />
+            </RelativeLayout>
+
+            <include layout="@layout/view_cutting_line_1px"></include>
+
+            <LinearLayout
+                android:id="@+id/linear_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:padding="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="昵称"
+                    android:textColor="@color/text_color_default"
+                    android:textSize="16sp"/>
+
+
+                <TextView
+                    android:id="@+id/tv_nickname"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:drawablePadding="10dp"
+                    android:gravity="right"
+                    android:hint="请输入您的昵称"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_default"
+                    android:textSize="16sp"
+                    />
+
+                <View
+                    android:layout_width="7dp"
+                    android:layout_height="12dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_arrow_right"
+                    />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="15dp"
+                android:background="#cdcdcd"/>
+
+            <LinearLayout
+                android:id="@+id/linear_choose_sex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:padding="15dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="性别"
+                    android:textColor="@color/text_color_default"
+                    android:textSize="16sp"/>
+
+
+                <TextView
+                    android:id="@+id/tv_sex"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:drawablePadding="10dp"
+                    android:gravity="right"
+                    android:hint="请选择您的性别"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_default"
+                    android:textSize="16sp"/>
+
+                <View
+                    android:layout_width="7dp"
+                    android:layout_height="12dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_arrow_right"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="15dp"
+                android:background="#CDCDCD"/>
+
+            <LinearLayout
+                android:id="@+id/linear_choose_birth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:padding="15dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="生日"
+                    android:textColor="@color/text_color_default"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/tv_birth"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:drawablePadding="10dp"
+                    android:gravity="right"
+                    android:hint="请选择您的生日"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_default"
+                    android:textSize="16sp"
+                    />
+
+                <View
+                    android:layout_width="7dp"
+                    android:layout_height="12dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_arrow_right"
+                    />
+            </LinearLayout>
+
+            <include layout="@layout/view_cutting_line_1px"></include>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_submit"
+        style="@style/Button_Confirm_style"
+        android:layout_margin="15dp"
+        android:text="提交"/>
+
+</LinearLayout>

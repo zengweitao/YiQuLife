@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical"
+    tools:context="com.quanmai.yiqu.ui.integration.GiveIntegrationActivity">
+
+    <include layout="@layout/common_title_view" />
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/relativeGiveType"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_recycle_successd"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/textViewType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="#575757"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:hint="选择积分赠送类型"
+                android:textColorHint="#b4b4b4"
+                />
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="7dp"
+                android:background="@drawable/icon_arrow_down"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_recycle_successd"
+            >
+
+            <EditText
+                android:id="@+id/editTextIntegarls"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:textColorHint="#b4b4b4"
+                android:textSize="17sp"
+                android:paddingLeft="15dp"
+                android:inputType="number"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearIntegration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="15dp"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textColor="#575757"
+            android:text="活动积分："
+            />
+
+        <TextView
+            android:id="@+id/textViewPoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="17sp"
+            android:textColor="@color/custom_red"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:text="/"
+            />
+
+        <TextView
+            android:id="@+id/textViewTotalPoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="17sp"
+            android:textColor="#575757"
+
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonMakeQRCodes"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/theme"
+        android:text="生成二维码"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        />
+
+</LinearLayout>

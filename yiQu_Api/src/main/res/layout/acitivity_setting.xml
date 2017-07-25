@@ -1,0 +1,204 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_default"
+              android:orientation="vertical">
+
+    <include layout="@layout/common_title_view"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <LinearLayout
+            android:id="@+id/ll_personal_info_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="11dp"
+            android:paddingTop="11dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="个人资料设置"
+                android:textColor="@color/text_color_default"
+                android:textSize="16sp"/>
+
+            <View
+                android:layout_width="7dp"
+                android:layout_height="12dp"
+                android:background="@drawable/ic_arrow_right"
+                />
+        </LinearLayout>
+
+        <include layout="@layout/view_cutting_line_1px"></include>
+
+        <LinearLayout
+            android:id="@+id/ll_modify_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="11dp"
+            android:paddingTop="11dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="登录密码修改"
+                android:textColor="@color/text_color_default"
+                android:textSize="16sp"/>
+
+            <View
+                android:layout_width="7dp"
+                android:layout_height="12dp"
+                android:background="@drawable/ic_arrow_right"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/view_cutting_line_1px"></include>
+
+    <LinearLayout
+        android:id="@+id/ll_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingBottom="11dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="11dp"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="关于益趣生活"
+            android:textColor="@color/text_color_default"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_app_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:textColor="@color/text_color_default"
+            android:textSize="17sp"
+            />
+
+        <View
+            android:layout_width="7dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/ic_arrow_right"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="15dp"
+        android:background="#cdcdcd"/>
+
+    <LinearLayout
+        android:id="@+id/ll_clear_cache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingBottom="11dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="11dp"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="清除缓存"
+            android:textColor="@color/text_color_default"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_cache_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:textColor="@color/text_color_default"
+            android:textSize="17sp"/>
+
+        <View
+            android:layout_width="7dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/ic_arrow_right"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="15dp"
+        android:background="#cdcdcd"/>
+
+    <LinearLayout
+        android:id="@+id/ll_feedBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingBottom="11dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="11dp"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="问题反馈"
+            android:textColor="@color/text_color_default"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_red"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/bg_red_oval"
+            android:visibility="gone"
+            />
+
+        <View
+            android:layout_width="7dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/ic_arrow_right"
+            />
+    </LinearLayout>
+
+    <include layout="@layout/view_cutting_line_1px"></include>
+
+
+    <Button
+        android:id="@+id/btn_logout"
+        style="@style/Button_Confirm_style"
+        android:layout_margin="25dp"
+        android:text="退出登录"/>
+
+</LinearLayout>

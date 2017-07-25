@@ -1,0 +1,2 @@
+TASK com.quanmai.yiqu id=536
+  ACTIVITY com.quanmai.yiqu/.ui.booking.RecycleRecordActivity 21ff6bad pid=23039

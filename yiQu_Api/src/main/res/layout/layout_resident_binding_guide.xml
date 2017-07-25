@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:descendantFocusability="afterDescendants"
+              android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rlBindingAbove"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@color/bg_alpha_40"
+        android:descendantFocusability="afterDescendants"
+        >
+
+        <ImageView
+            android:id="@+id/imgBindingTag"
+            android:layout_width="255dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="11dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/ic_binding_guide_tag"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="2.5dp"
+            android:background="@drawable/ic_binding_guide_above_line"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="44dp"
+        android:background="@color/bg_alpha_40"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="2.5dp"
+            android:background="@drawable/ic_binding_guide_below_line"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

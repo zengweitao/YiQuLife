@@ -1,0 +1,411 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#F2F2F2"
+              android:orientation="vertical">
+
+    <include layout="@layout/common_title_view"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            >
+
+            <include layout="@layout/personal_head"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/imageViewBg"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="107dp"
+                    android:background="@android:color/white"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/textViewTotalIntegral"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:textColor="@color/text_color_979797"
+                        android:textSize="12sp"
+                        tools:text="7200/8000"
+                        />
+
+                    <ProgressBar
+                        android:id="@+id/progressBarIntegral"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_marginTop="5dp"
+                        android:max="800"
+                        android:progressDrawable="@drawable/bg_progress_bar"
+                        />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupLevel"
+                        android:layout_width="match_parent"
+                        android:layout_height="17dp"
+                        android:layout_marginTop="3dp"
+                        android:orientation="horizontal"
+                        >
+
+                        <Button
+                            android:layout_width="32.5dp"
+                            android:layout_height="17dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/bg_level_button_gray"
+                            android:text="LV1"
+                            android:textColor="@color/text_color_cdcdcd"
+                            android:textSize="11.3sp"
+                            />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            >
+                        </View>
+
+                        <Button
+                            android:layout_width="32.5dp"
+                            android:layout_height="17dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/bg_level_button_gray"
+                            android:text="LV2"
+                            android:textColor="@color/text_color_cdcdcd"
+                            android:textSize="11.3sp"
+                            />
+
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            >
+                        </View>
+
+                        <Button
+                            android:layout_width="32.5dp"
+                            android:layout_height="17dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/bg_level_button_gray"
+                            android:text="LV3"
+                            android:textColor="@color/text_color_cdcdcd"
+                            android:textSize="11.3sp"
+                            />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            >
+                        </View>
+
+                        <Button
+                            android:layout_width="32.5dp"
+                            android:layout_height="17dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/bg_level_button_gray"
+                            android:text="LV4"
+                            android:textColor="@color/text_color_cdcdcd"
+                            android:textSize="11.3sp"
+                            />
+
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            >
+                        </View>
+
+                        <Button
+                            android:layout_width="32.5dp"
+                            android:layout_height="17dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/bg_level_button_gray"
+                            android:text="LV5"
+                            android:textColor="@color/text_color_cdcdcd"
+                            android:textSize="11.3sp"
+                            />
+
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            >
+                        </View>
+
+                        <Button
+                            android:layout_width="32.5dp"
+                            android:layout_height="17dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/bg_level_button_gray"
+                            android:text="LV6"
+                            android:textColor="@color/text_color_cdcdcd"
+                            android:textSize="11.3sp"
+                            />
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:id="@+id/textViewLevelRemain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10.5dp"
+                        android:gravity="center"
+                        android:textColor="@color/text_color_default"
+                        android:textSize="15sp"
+                        tools:text="升级至Lv4还需800成长值"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:orientation="vertical"
+                    android:paddingBottom="9.5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    >
+
+                    <include layout="@layout/view_cutting_line_1px"></include>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="当前等级特权"
+                        android:textColor="@color/text_color_default"
+                        android:textSize="14sp"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoutLevelPrivilege"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <include layout="@layout/view_cutting_line_1px"></include>
+
+                <LinearLayout
+                    android:id="@+id/linearTest"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    >
+
+                    <View
+                        android:layout_width="5dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="@color/theme"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="成长任务"
+                        android:textColor="#575757"
+                        android:textSize="15sp"
+                        />
+                </LinearLayout>
+
+                <!--每日签到-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="69dp"
+                    android:background="@android:color/white"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="每日签到"
+                        android:textColor="@color/text_color_default"
+                        android:textSize="17sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvExplanationSign"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="39dp"
+                        android:text="+10成长值 +10积分"
+                        android:textColor="#ffb932"
+                        android:textSize="14sp"
+                        android:visibility="gone"
+                        />
+
+                    <Button
+                        android:id="@+id/buttonSignIn"
+                        android:layout_width="75dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/bg_btn_green_stroke"
+                        android:text="去签到"
+                        android:textColor="@color/theme"
+                        android:textSize="15sp"
+                        />
+
+                    <include layout="@layout/view_cutting_line_bottom_1px"></include>
+                </RelativeLayout>
+
+                <!--发布闲置物品-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="69dp"
+                    android:background="@android:color/white"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="发布闲置物品"
+                        android:textColor="@color/text_color_default"
+                        android:textSize="17sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvExplanationPublish"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="39dp"
+                        android:text="+10成长值 +10积分"
+                        android:textColor="#ffb932"
+                        android:textSize="14sp"
+                        android:visibility="gone"
+                        />
+
+                    <Button
+                        android:id="@+id/buttonPublish"
+                        android:layout_width="75dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/bg_btn_green_stroke"
+                        android:text="去发布"
+                        android:textColor="@color/theme"
+                        android:textSize="15sp"
+                        />
+
+                    <include layout="@layout/view_cutting_line_bottom_1px"></include>
+                </RelativeLayout>
+
+                <!--领取环保袋-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="69dp"
+                    android:background="@android:color/white"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="当日首次领取环保袋"
+                        android:textColor="@color/text_color_default"
+                        android:textSize="17sp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="39dp"
+                        android:text="+10成长值"
+                        android:textColor="#ffb932"
+                        android:textSize="14sp"
+                        android:visibility="gone"
+                        />
+
+                    <Button
+                        android:id="@+id/buttonFetchPag"
+                        android:layout_width="75dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/bg_btn_green_stroke"
+                        android:text="去领取"
+                        android:textColor="@color/theme"
+                        android:textSize="15sp"
+                        />
+                </RelativeLayout>
+
+                <include layout="@layout/view_cutting_line_1px"></include>
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayoutKnowLevel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:color/white"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="15dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:gravity="center_vertical"
+                        android:text="了解等级特权"
+                        android:textColor="#575757"
+                        android:textSize="16sp"
+                        />
+
+                    <TextView
+                        android:layout_width="7dp"
+                        android:layout_height="12dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/ic_arrow_right"
+                        />
+
+                </RelativeLayout>
+
+                <include layout="@layout/view_cutting_line_1px"></include>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

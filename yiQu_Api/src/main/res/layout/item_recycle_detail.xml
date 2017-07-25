@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp">
+
+    <TextView
+        android:id="@+id/tvRecycleType"
+        style="@style/TextView_style"
+        android:textColor="@color/text_color_979797"
+        tools:text="纸箱"
+        />
+
+    <TextView
+        android:id="@+id/tvRecycleQuantity"
+        style="@style/TextView_style"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="80dp"
+        android:textColor="@color/text_color_979797"
+        tools:text="x26"
+        />
+
+    <TextView
+        android:id="@+id/tvRecyclePoint"
+        style="@style/TextView_style"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/text_color_979797"
+        tools:text="10积分"
+        />
+</RelativeLayout>

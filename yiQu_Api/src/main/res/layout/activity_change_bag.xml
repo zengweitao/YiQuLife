@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/white"
+              android:orientation="vertical"
+    >
+
+    <include layout="@layout/common_title_view"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/banner"
+        android:layout_weight="1"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <com.bigkoo.convenientbanner.ConvenientBanner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#f2f2f2"
+                app:canLoop="true"
+                />
+
+            <ImageView
+                android:id="@+id/imageViewRule"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#f2f2f2"
+                android:scaleType="fitXY"
+                android:visibility="gone"
+                />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="148dp">
+
+                <com.quanmai.yiqu.common.widget.XCRoundImageView
+                    android:id="@+id/imageViewHeadPortrait"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    tools:background="@drawable/ic_launcher"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageViewHeadPortrait"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:id="@+id/textViewName"
+                        style="@style/TextView_style"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:textSize="17sp"
+                        tools:text="大菠萝"
+                        />
+
+                    <Button
+                        android:id="@+id/buttonLevel"
+                        android:layout_width="23dp"
+                        android:layout_height="12dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/bg_button_orange"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="8sp"
+                        tools:text="LV1"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    >
+
+                    <TextView
+                        android:id="@+id/textViewLuckBag"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingBottom="8.6dp"
+                        android:paddingTop="8.6dp"
+                        android:textColor="@color/text_color_default"
+                        android:textSize="15sp"
+                        tools:text="福袋数：10"
+                        />
+
+                    <TextView
+                        android:id="@+id/textViewScore"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingBottom="8.6dp"
+                        android:paddingTop="8.6dp"
+                        android:textColor="@color/text_color_default"
+                        android:textSize="15sp"
+                        tools:text="积分数：370"
+                        />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5.5dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/bg_bag_num"
+                        />
+
+                    <TextView
+                        android:id="@+id/textViewBagNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@null"
+                        android:inputType="number"
+                        android:text="1"
+                        android:textColor="@color/white"
+                        android:textSize="40sp"
+                        />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/imageViewCut"
+                    android:layout_width="67dp"
+                    android:layout_height="67dp"
+                    android:layout_marginLeft="29.5dp"
+                    android:layout_marginTop="22dp"
+                    android:background="@drawable/ic_bt_cut"
+                    />
+
+                <ImageView
+                    android:id="@+id/imageViewAdd"
+                    android:layout_width="67dp"
+                    android:layout_height="67dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="29.5dp"
+                    android:layout_marginTop="22dp"
+                    android:background="@drawable/ic_bt_add"
+                    />
+            </RelativeLayout>
+
+            <CheckBox
+                android:id="@+id/checkboxFedFirst"
+                android:layout_width="90dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="15dp"
+                android:button="@drawable/bg_checkbox_fed_first"
+                android:checked="true"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#cdcdcd"
+                ></View>
+
+            <TextView
+                android:id="@+id/textViewConsume"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="start"
+                android:maxLines="2"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:singleLine="false"
+                android:text="每领取一个袋子将消耗一个福袋或10积分，当优先消费福袋时，福袋数不足将会自动扣除积分"
+                android:textColor="#979797"
+                android:textSize="15sp"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/buttonConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/theme"
+        android:text="确认领取"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        />
+</LinearLayout>

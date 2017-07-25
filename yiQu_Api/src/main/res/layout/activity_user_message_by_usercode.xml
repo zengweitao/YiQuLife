@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title_view" />
+
+    <com.quanmai.yiqu.common.widget.PullToZoomScrollView
+        android:id="@+id/pull_zoom_scroll_usermessage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/y8">
+
+            <include layout="@layout/personal_head" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y80"
+                android:layout_marginBottom="@dimen/y1"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x28"
+                        android:text="用户名："
+                        android:textColor="#666666"
+                        android:textSize="@dimen/y26" />
+
+                    <TextView
+                        android:id="@+id/textview_headusername"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/y26" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/y1"
+                    android:layout_height="@dimen/y60"
+                    android:layout_gravity="center_vertical"
+                    android:background="#F0EFF5" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x28"
+                        android:text="所属小区："
+                        android:textColor="#666666"
+                        android:textSize="@dimen/y26" />
+
+                    <TextView
+                        android:id="@+id/textview_communityname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/y26" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y80"
+                android:layout_marginBottom="@dimen/y22"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x28"
+                        android:text="手机号："
+                        android:textColor="#666666"
+                        android:textSize="@dimen/y26" />
+
+                    <TextView
+                        android:id="@+id/textview_phonecode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/y26" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/y1"
+                    android:layout_height="@dimen/y60"
+                    android:layout_gravity="center_vertical"
+                    android:background="#F0EFF5" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x28"
+                        android:text="门牌号码："
+                        android:textColor="#666666"
+                        android:textSize="@dimen/y26" />
+
+                    <TextView
+                        android:id="@+id/textview_doorplatecode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/y26" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/y22"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y78"
+                    android:layout_marginBottom="@dimen/y1"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="福袋领取记录"
+                        android:textColor="@color/theme"
+                        android:textSize="@dimen/y30" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y92"
+                    android:layout_marginBottom="@dimen/y1"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button_1_month"
+                        android:layout_width="@dimen/x85"
+                        android:layout_height="@dimen/y65"
+                        android:background="@drawable/bg_btn_ffftheme_radius_34px"
+                        android:text="1月"
+                        android:textColor="#bdc9c3"
+                        android:textSize="@dimen/y24" />
+
+                    <Button
+                        android:id="@+id/button_2_month"
+                        android:layout_width="@dimen/x85"
+                        android:layout_height="@dimen/y65"
+                        android:layout_marginLeft="@dimen/x35"
+                        android:background="@drawable/bg_btn_ffftheme_radius_34px"
+                        android:text="2月"
+                        android:textColor="#bdc9c3"
+                        android:textSize="@dimen/y24" />
+
+                    <Button
+                        android:id="@+id/button_3_month"
+                        android:layout_width="@dimen/x85"
+                        android:layout_height="@dimen/y65"
+                        android:layout_marginLeft="@dimen/x35"
+                        android:background="@drawable/bg_btn_ffftheme_radius_34px"
+                        android:text="3月"
+                        android:textColor="#bdc9c3"
+                        android:textSize="@dimen/y24" />
+
+                    <Button
+                        android:id="@+id/button_4_month"
+                        android:layout_width="@dimen/x85"
+                        android:layout_height="@dimen/y65"
+                        android:layout_marginLeft="@dimen/x35"
+                        android:background="@drawable/bg_btn_ffftheme_radius_34px"
+                        android:text="4月"
+                        android:textColor="#bdc9c3"
+                        android:textSize="@dimen/y24" />
+
+                    <Button
+                        android:id="@+id/button_5_month"
+                        android:layout_width="@dimen/x85"
+                        android:layout_height="@dimen/y65"
+                        android:layout_marginLeft="@dimen/x35"
+                        android:background="@drawable/bg_btn_ffftheme_radius_34px"
+                        android:text="5月"
+                        android:textColor="#bdc9c3"
+                        android:textSize="@dimen/y24" />
+
+                    <Button
+                        android:id="@+id/button_6_month"
+                        android:layout_width="@dimen/x85"
+                        android:layout_height="@dimen/y65"
+                        android:layout_marginLeft="@dimen/x35"
+                        android:background="@drawable/bg_btn_ffftheme_radius_34px"
+                        android:text="6月"
+                        android:textColor="#bdc9c3"
+                        android:textSize="@dimen/y24" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y92"
+                    android:layout_marginBottom="@dimen/y1"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button_7_month"
+                        android:layout_width="@dimen/x85"
+                        android:layout_height="@dimen/y65"
+                        android:background="@drawable/bg_btn_ffftheme_radius_34px"
+                        android:text="7月"
+                        android:textColor="#bdc9c3"
+                        android:textSize="@dimen/y24" />
+
+                    <Button
+                        android:id="@+id/button_8_month"
+                        android:layout_width="@dimen/x85"
+                        android:layout_height="@dimen/y65"
+                        android:layout_marginLeft="@dimen/x35"
+                        android:background="@drawable/bg_btn_ffftheme_radius_34px"
+                        android:text="8月"
+                        android:textColor="#bdc9c3"
+                        android:textSize="@dimen/y24" />
+
+                    <Button
+                        android:id="@+id/button_9_month"
+                        android:layout_width="@dimen/x85"
+                        android:layout_height="@dimen/y65"
+                        android:layout_marginLeft="@dimen/x35"
+                        android:background="@drawable/bg_btn_ffftheme_radius_34px"
+                        android:text="9月"
+                        android:textColor="#bdc9c3"
+                        android:textSize="@dimen/y24" />
+
+                    <Button
+                        android:id="@+id/button_10_month"
+                        android:layout_width="@dimen/x85"
+                        android:layout_height="@dimen/y65"
+                        android:layout_marginLeft="@dimen/x35"
+                        android:background="@drawable/bg_btn_ffftheme_radius_34px"
+                        android:text="10月"
+                        android:textColor="#bdc9c3"
+                        android:textSize="@dimen/y24" />
+
+                    <Button
+                        android:id="@+id/button_11_month"
+                        android:layout_width="@dimen/x85"
+                        android:layout_height="@dimen/y65"
+                        android:layout_marginLeft="@dimen/x35"
+                        android:background="@drawable/bg_btn_ffftheme_radius_34px"
+                        android:text="11月"
+                        android:textColor="#bdc9c3"
+                        android:textSize="@dimen/y24" />
+
+                    <Button
+                        android:id="@+id/button_12_month"
+                        android:layout_width="@dimen/x85"
+                        android:layout_height="@dimen/y65"
+                        android:layout_marginLeft="@dimen/x35"
+                        android:background="@drawable/bg_btn_ffftheme_radius_34px"
+                        android:text="12月"
+                        android:textColor="#bdc9c3"
+                        android:textSize="@dimen/y24" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y80"
+                android:layout_marginBottom="@dimen/y1"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:id="@+id/linear_integral_details"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/x50"
+                        android:layout_height="@dimen/x50"
+                        android:background="@drawable/ic_give_integral" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x20"
+                        android:layout_marginRight="@dimen/x36"
+                        android:text="积分详情"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/y26" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/y1"
+                    android:layout_height="@dimen/y60"
+                    android:layout_gravity="center_vertical"
+                    android:background="#F0EFF5" />
+
+                <LinearLayout
+                    android:id="@+id/linear_ycoin_details"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/x50"
+                        android:layout_height="@dimen/x50"
+                        android:background="@drawable/icon_ycoin" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x20"
+                        android:layout_marginRight="@dimen/x36"
+                        android:text="益币详情"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/y26" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/y1"
+                    android:layout_height="@dimen/y60"
+                    android:layout_gravity="center_vertical"
+                    android:background="#F0EFF5" />
+
+                <LinearLayout
+                    android:id="@+id/linear_give_present"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/x50"
+                        android:layout_height="@dimen/x50"
+                        android:background="@drawable/icon_gift_giving" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x20"
+                        android:layout_marginRight="@dimen/x36"
+                        android:text="赠送礼品"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/y26" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y80"
+                android:layout_marginBottom="@dimen/y1"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:id="@+id/linear_googbag_details"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/x50"
+                        android:layout_height="@dimen/x50"
+                        android:background="@drawable/icon_lucky_bag" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x20"
+                        android:layout_marginRight="@dimen/x36"
+                        android:text="福袋详情"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/y26" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/y1"
+                    android:layout_height="@dimen/y60"
+                    android:layout_gravity="center_vertical"
+                    android:background="#F0EFF5" />
+
+                <LinearLayout
+                    android:id="@+id/linear_getbag_record"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/x50"
+                        android:layout_height="@dimen/x50"
+                        android:background="@drawable/ic_fetch_bag" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x20"
+                        android:layout_marginRight="@dimen/x36"
+                        android:text="取袋记录"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/y26" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/y1"
+                    android:layout_height="@dimen/y60"
+                    android:layout_gravity="center_vertical"
+                    android:background="#F0EFF5" />
+
+                <LinearLayout
+                    android:id="@+id/linear_grade_record"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/x50"
+                        android:layout_height="@dimen/x50"
+                        android:background="@drawable/icon_score" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x20"
+                        android:layout_marginRight="@dimen/x36"
+                        android:text="评分记录"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/y26" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y80"
+                android:layout_marginBottom="@dimen/y1"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:id="@+id/linear_give_ycoin"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/x50"
+                        android:layout_height="@dimen/x50"
+                        android:background="@drawable/ic_give_ycoin" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x20"
+                        android:layout_marginRight="@dimen/x36"
+                        android:text="赠送益币"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/y26" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/y1"
+                    android:layout_height="@dimen/y60"
+                    android:layout_gravity="center_vertical"
+                    android:background="#F0EFF5" />
+
+                <LinearLayout
+                    android:id="@+id/linear_give_integral"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/x50"
+                        android:layout_height="@dimen/x50"
+                        android:background="@drawable/icon_integrals" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x20"
+                        android:layout_marginRight="@dimen/x36"
+                        android:text="赠送积分"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/y26" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/y1"
+                    android:layout_height="@dimen/y60"
+                    android:layout_gravity="center_vertical"
+                    android:background="#F0EFF5" />
+
+                <LinearLayout
+                    android:id="@+id/linear_null"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal">
+
+                    <!--<ImageView
+                        android:layout_width="@dimen/x80"
+                        android:layout_height="@dimen/x80"
+                        android:background="@drawable/icon_score" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x25"
+                        android:layout_marginRight="@dimen/x54"
+                        android:text="评分记录"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/y39" />-->
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.quanmai.yiqu.common.widget.PullToZoomScrollView>
+
+</LinearLayout>

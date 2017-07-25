@@ -1,0 +1,171 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_color_e5e7ea"
+              android:orientation="vertical"
+              tools:context="com.quanmai.yiqu.ui.code.ChangeBagSecondStepActivity">
+
+    <include layout="@layout/common_title_view"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_above="@+id/tv_count"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        >
+
+        <com.quanmai.yiqu.common.widget.CircularImageView
+            android:id="@+id/ivPrompt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:circular_radius="4dp"
+            app:circular_type="round"
+            />
+    </RelativeLayout>
+
+    <TextView
+
+        android:id="@+id/tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="出袋后请及时收走，以免遗失"
+        android:textColor="@color/text_color_979797"
+        android:textSize="15sp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvSurplusScore"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取袋成功后每个袋子将消耗1福袋或10积分"
+            android:textColor="@color/text_color_979797"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/tvFedNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color_F5A623"
+            android:textSize="15sp"
+            android:visibility="gone"
+            tools:text="50"
+            />
+
+        <TextView
+            android:id="@+id/tvFedNumUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="福袋 "
+            android:textColor="@color/text_color_979797"
+            android:textSize="15sp"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/tvScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color_F5A623"
+            android:textSize="15sp"
+            android:visibility="gone"
+            tools:text="50"
+            />
+
+        <TextView
+            android:id="@+id/tvScoreUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="积分"
+            android:textColor="@color/text_color_979797"
+            android:textSize="15sp"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_confirm"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="剩余积分请在'我的积分'中查询"
+            android:textColor="@color/text_color_979797"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/tvSurplusFedNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color_F5A623"
+            android:textSize="15sp"
+            android:visibility="gone"
+            tools:text="2"
+            />
+
+        <TextView
+            android:id="@+id/tvSurplusFedNumUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="福袋"
+            android:textColor="@color/text_color_979797"
+            android:textSize="15sp"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/tvSurplusScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/text_color_F5A623"
+            android:textSize="15sp"
+            android:visibility="gone"
+            tools:text="290"
+            />
+
+        <TextView
+            android:id="@+id/tvSurplusScoreUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="积分"
+            android:textColor="@color/text_color_979797"
+            android:textSize="15sp"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_confirm"
+        style="@style/Button_Confirm_style"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:text="完成"/>
+
+</LinearLayout>

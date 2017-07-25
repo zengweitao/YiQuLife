@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#ebebeb"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.bigkoo.convenientbanner.ConvenientBanner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#f2f2f2"
+        app:canLoop="true"
+        />
+    <ImageView
+        android:id="@+id/imageViewRule"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#f2f2f2"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#ffffff"
+            android:layout_marginTop="5dp">
+
+            <com.quanmai.yiqu.common.widget.DraggableGridViewPager
+                android:id="@+id/draggable_grid_view_pager_classifi"
+                android:layout_width="match_parent"
+                android:layout_height="178dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#cdcdcd"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#f8f8f8"
+        >
+
+        <View
+
+            android:layout_width="5dp"
+            android:layout_height="15dp"
+            android:background="#02AFF3"
+            android:layout_marginLeft="15dp"
+            />
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分类知识"
+            android:textSize="15sp"
+            android:textColor="#626262"
+            android:layout_marginLeft="5dp"
+            />
+
+        <TextView
+            android:id="@+id/textViewMoreDuo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="更多"
+            android:textSize="12sp"
+            android:textColor="#959595"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

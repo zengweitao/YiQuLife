@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_default"
+    android:orientation="vertical"
+    tools:context="com.quanmai.yiqu.ui.mys.realname.ResidentAppealActivity">
+
+    <include layout="@layout/common_title_view"></include>
+
+    <RelativeLayout
+        style="@style/RelativeLayout_base_style"
+        android:layout_marginTop="5dp"
+        >
+
+        <TextView
+            android:id="@+id/tvName"
+            style="@style/TextView_style"
+            android:layout_centerVertical="false"
+            android:maxWidth="70dp"
+            tools:text="陆自力"
+            />
+
+        <TextView
+            android:id="@+id/tvPhone"
+            style="@style/TextView_style"
+            android:layout_centerVertical="false"
+            android:layout_marginLeft="70dp"
+            tools:text="180****4635"
+            />
+
+        <TextView
+            android:id="@+id/tvAddress"
+            style="@style/TextView_style"
+            android:layout_below="@+id/tvPhone"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="5dp"
+            android:singleLine="false"
+            tools:text="广东省海珠区江南新苑A03栋 4楼 401"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/RelativeLayout_base_style"
+        android:layout_height="120dp"
+        android:layout_marginTop="5dp"
+        android:gravity="start"
+        >
+
+        <EditText
+            android:id="@+id/edtReason"
+            style="@style/EditText_Style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="start"
+            android:hint="请填写您的申诉原因"
+            android:maxLength="400"
+            android:singleLine="false"
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnConfirm"
+        style="@style/Button_Confirm_style"
+        android:layout_marginTop="20dp"
+        android:text="提交"
+        ></Button>
+</LinearLayout>

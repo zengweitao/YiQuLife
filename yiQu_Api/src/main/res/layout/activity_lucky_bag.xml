@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.quanmai.yiqu.ui.fuli.LuckyBagActivity">
+
+    <include layout="@layout/common_title_view" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:id="@+id/imageViewContent"
+                android:layout_width="match_parent"
+                android:layout_height="225dp"
+                android:background="@drawable/bg_lucky_bag"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="42dp"
+                android:layout_marginLeft="42dp"
+                android:layout_marginTop="20dp"
+                >
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="2px"
+                    android:background="#b4b4b4"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="活动规则"
+                    android:textColor="#979797"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    />
+                <View
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="2px"
+                    android:background="#b4b4b4"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="题目内容为相关环保知识，答对可获得积分或福袋福利。注册用户每月有10次答题获取奖励机会，每次奖励3个积分。"
+                android:textSize="15sp"
+                android:textColor="#979797"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="13.7dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="试点小区的指定用户可获取相应的福袋奖励。"
+                android:textSize="15sp"
+                android:textColor="#979797"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户超过额定的领取次数继续将答题获得奖励。用户领取的福袋可通过扫码取袋抵扣积分使用
+"
+                android:textSize="15sp"
+                android:textColor="#979797"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="13dp"
+                />
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="用户超过额定的领取次数继续将答题不获得奖励。用户领取的福袋可通过扫码取袋抵扣积分使用。"-->
+                <!--android:textSize="15sp"-->
+                <!--android:textColor="#979797"-->
+                <!--android:layout_marginLeft="25dp"-->
+                <!--android:layout_marginRight="25dp"-->
+                <!--android:layout_marginTop="13dp"-->
+                <!--/>-->
+
+        </LinearLayout>
+
+    </ScrollView>
+    <Button
+        android:id="@+id/buttonStart"
+        android:layout_width="match_parent"
+        android:layout_height="47.5dp"
+        android:background="@color/theme"
+        android:text="开始答题"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:gravity="center"
+        />
+</LinearLayout>

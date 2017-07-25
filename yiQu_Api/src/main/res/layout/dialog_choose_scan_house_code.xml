@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_dialog"
+        android:minHeight="190dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="17.5dp"
+            android:paddingRight="17.5dp"
+            >
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="25dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/text_color_default"
+                android:textSize="18sp"
+                tools:text="Set Title" />
+
+            <include layout="@layout/view_cutting_line_1px"></include>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/button_get_bag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="扫码取袋/取纸"
+                    android:textColor="@color/theme"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:background="@null" />
+                <Button
+                    android:id="@+id/button_putaway_bag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="福二袋C款物品上架"
+                    android:textColor="@color/theme"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:background="@null" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

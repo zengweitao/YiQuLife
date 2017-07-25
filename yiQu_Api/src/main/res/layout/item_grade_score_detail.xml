@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        >
+        <TextView
+            android:id="@+id/tvEquipmentName"
+            style="@style/TextView_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            tools:text="无盖子设施无盖子设施无盖子设施"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="125dp"
+            />
+
+        <TextView
+            android:id="@+id/tvEquipmentNum"
+            style="@style/TextView_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            tools:text="3"
+            android:layout_marginLeft="245dp"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/tvScore"
+            style="@style/TextView_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            tools:text="-6"
+            android:layout_marginLeft="310dp"
+            android:textColor="@color/text_color_F5A623"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

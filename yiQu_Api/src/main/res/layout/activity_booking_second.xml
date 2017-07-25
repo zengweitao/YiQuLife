@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical"
+    tools:context="com.quanmai.yiqu.ui.booking.BookingSecondActivity">
+
+    <include
+        android:id="@+id/include_title"
+        layout="@layout/common_title_view" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include_title"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutEditAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x24"
+                android:layout_marginTop="@dimen/y34"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="#575757"
+                android:textSize="@dimen/y34"
+                tools:text="王小姐" />
+
+            <TextView
+                android:id="@+id/textViewPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textViewAddress"
+                android:layout_marginTop="@dimen/y34"
+                android:textColor="#575757"
+                android:textSize="@dimen/y34"
+                tools:text="13728174592" />
+
+            <TextView
+                android:id="@+id/textViewAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewName"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="@dimen/x156"
+                android:layout_marginTop="5dp"
+                android:textColor="#575757"
+                android:textSize="@dimen/y34"
+                tools:text="回收时间 6月28日 全天" />
+
+            <!--<ImageView
+                android:id="@+id/arrow5"
+                android:layout_width="7dp"
+                android:layout_height="12dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/ic_arrow_right"
+                android:visibility="gone" />-->
+
+        </RelativeLayout>
+
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#cdcdcd" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutSelectDate"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="5dp"
+            android:background="#ffffff"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="预约日期"
+                android:textColor="#575757"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textViewDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/arrow"
+                android:text="选择日期"
+                android:textColor="#b4b4b4"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/arrow"
+                android:layout_width="7dp"
+                android:layout_height="12dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/ic_arrow_right" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#cdcdcd" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutSelectTime"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="#ffffff"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="预约时段"
+                android:textColor="#575757"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textViewTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/arrow1"
+                android:text="选择时段"
+                android:textColor="#b4b4b4"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/arrow1"
+                android:layout_width="7dp"
+                android:layout_height="12dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/ic_arrow_right" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#cdcdcd" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="选择可回收废品的类型数量"
+            android:textColor="#575757"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:visibility="gone" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/y20"
+            android:orientation="horizontal">
+
+            <ListView
+                android:id="@+id/listViewLeft"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:background="#f2f2f2"
+                android:divider="@null"
+                android:scrollbars="none"></ListView>
+
+            <ListView
+                android:id="@+id/listViewRight"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:divider="@null"
+                android:scrollbars="none">
+
+
+            </ListView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y90"
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentTop="true"
+            android:background="#cdcdcd" />
+
+        <LinearLayout
+            android:id="@+id/linear_bottm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:background="@color/black">
+
+            <TextView
+                android:id="@+id/textViewPredictIntegral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20益币"
+                android:gravity="center"
+                android:textSize="@dimen/y30"
+                android:textColor="@color/text_color_F5A623"
+                android:layout_marginLeft="@dimen/x150"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="预计可获得"
+                android:textSize="@dimen/y24"
+                android:textColor="@color/text_color_cdcdcd"
+                android:layout_marginLeft="@dimen/x150"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/textViewConfirmBooking"
+            android:layout_width="@dimen/x250"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/theme"
+            android:gravity="center"
+            android:text="确认预约"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/y28" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relative_shopping_car"
+        android:layout_width="@dimen/x100"
+        android:layout_height="@dimen/x100"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/x24">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_circle_48c299"
+            android:padding="@dimen/x24"
+            android:src="@drawable/icon_box" />
+        <ImageView
+            android:id="@+id/image_dor_shopingcar"
+            android:layout_width="@dimen/x20"
+            android:layout_height="@dimen/x20"
+            android:background="@drawable/bg_dor_f08e1b"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/y6"
+            android:layout_marginRight="@dimen/x6"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

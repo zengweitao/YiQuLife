@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_default"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title_view" />
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/pull_scrollview_material"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="@dimen/y25">
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/ic_service_station" />
+
+                    <TextView
+                        android:id="@+id/tvCommname"
+                        style="@style/TextView_style"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="@dimen/x120"
+                        android:layout_marginStart="44dp"
+                        android:layout_marginTop="@dimen/y10"
+                        android:textSize="@dimen/y34"
+                        tools:text="丽江花园服务站" />
+
+                    <TextView
+                        android:id="@+id/tvAddress"
+                        style="@style/TextView_style"
+                        android:layout_alignLeft="@+id/tvCommname"
+                        android:layout_below="@+id/tvCommname"
+                        android:layout_centerVertical="false"
+                        android:layout_marginTop="5dp"
+                        android:singleLine="false"
+                        android:textColor="@color/text_color_979797"
+                        android:textSize="@dimen/y28"
+                        tools:text="广州市番禺区丽江花园丽影8座首层" />
+                </RelativeLayout>
+
+                <include layout="@layout/view_cutting_line_1px"></include>
+
+                <!--服务站库存-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:layout_width="5dp"
+                        android:layout_height="15dp"
+                        android:layout_centerVertical="true"
+                        android:background="@color/color_02AFF3" />
+
+                    <TextView
+                        style="@style/TextView_style"
+                        android:layout_marginLeft="@dimen/x30"
+                        android:text="服务站库存"
+                        android:textColor="@color/text_color_454545" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/llRepertory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:animateLayoutChanges="true"
+                    android:orientation="vertical"></LinearLayout>
+
+                <include layout="@layout/view_cutting_line_1px"></include>
+
+                <!--发放频率-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        style="@style/TextView_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x10"
+                        android:text="发放频率"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tvFrequency"
+                        style="@style/TextView_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:textSize="15sp"
+                        tools:text="按月发放" />
+                </RelativeLayout>
+
+                <!--本月总发放-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        style="@style/TextView_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x10"
+                        android:text="总发放"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tvTotalOut"
+                        style="@style/TextView_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="670只"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <!--本月剩余可发放-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        style="@style/TextView_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="@dimen/x10"
+                        android:text="剩余需发放"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tvTotalRemain"
+                        style="@style/TextView_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="1800只"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--<include layout="@layout/view_cutting_line_1px"></include>-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y100"
+                android:layout_marginTop="7dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewinquire"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x40"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="查看月份"
+                    android:textColor="@color/text_color_default"
+                    android:textSize="@dimen/y34" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_year"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/x30"
+                    android:gravity="center_vertical|right">
+
+                    <ImageView
+                        android:id="@+id/imageViewLastMonth"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:layout_toLeftOf="@+id/img_c"
+                        android:src="@drawable/icon_arrow_left_black" />
+
+                    <ImageView
+                        android:id="@+id/img_c"
+                        android:layout_width="20dp"
+                        android:layout_height="17dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/textViewDate"
+                        android:background="@drawable/icon_date"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/textViewDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:textColor="@color/text_color_default"
+                        android:textSize="24sp"
+                        tools:text="2016.04" />
+
+                    <ImageView
+                        android:id="@+id/imageViewNextMonth"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@+id/textViewDate"
+                        android:src="@drawable/icon_arrow_right_black" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y100"
+                android:layout_marginTop="@dimen/y2"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/Linear_putbags"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/image_material01"
+                        android:layout_width="@dimen/x34"
+                        android:layout_height="@dimen/y34"
+                        android:background="@drawable/icon_putwarehouse" />
+
+                    <TextView
+                        android:id="@+id/tvputwarehouse"
+                        style="@style/TextView_style"
+                        android:layout_marginLeft="5dp"
+                        android:text="入库明细"
+                        android:textColor="@color/text_color_6cbf9c"
+                        android:textSize="@dimen/y30"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/color_999999"></View>
+
+                <LinearLayout
+                    android:id="@+id/Linear_giveout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/image_material02"
+                        android:layout_width="@dimen/x34"
+                        android:layout_height="@dimen/y34"
+                        android:background="@drawable/icon_putaway_no" />
+
+                    <TextView
+                        android:id="@+id/tvputaway"
+                        style="@style/TextView_style"
+                        android:layout_marginLeft="5dp"
+                        android:text="已发明细"
+                        android:textColor="@color/text_color_666666"
+                        android:textSize="@dimen/y30"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/color_999999"></View>
+
+                <LinearLayout
+                    android:id="@+id/Linear_notgiveout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/image_material03"
+                        android:layout_width="@dimen/x34"
+                        android:layout_height="@dimen/y34"
+                        android:background="@drawable/icon_notgive_no" />
+
+                    <TextView
+                        android:id="@+id/tvnotgive"
+                        style="@style/TextView_style"
+                        android:layout_marginLeft="5dp"
+                        android:text="未发明细"
+                        android:textColor="@color/text_color_666666"
+                        android:textSize="@dimen/y30"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <include layout="@layout/view_cutting_line_bottom_1px"></include>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <include layout="@layout/view_no_data"></include>
+
+                <com.quanmai.yiqu.ui.views.CustomListView
+                    android:id="@+id/listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:cacheColorHint="@color/transparent"
+                    android:divider="@drawable/bg_cutting_line"
+                    android:fadingEdge="none"
+                    android:listSelector="@color/transparent"
+                    android:showDividers="middle" />
+            </FrameLayout>
+
+        </LinearLayout>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+</LinearLayout>

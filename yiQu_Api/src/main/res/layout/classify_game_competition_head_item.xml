@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y300"
+        android:orientation="vertical">
+
+        <com.bigkoo.convenientbanner.ConvenientBanner
+            android:id="@+id/banner_classify_game"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:canLoop="true" />
+
+        <ImageView
+            android:id="@+id/imageViewRule_classify_game"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y409"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/game_rule" />
+
+            <LinearLayout
+                android:layout_width="@dimen/x472"
+                android:layout_height="@dimen/y230"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="@dimen/x50"
+                android:layout_marginTop="@dimen/x42"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textview_game_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:layout_marginRight="@dimen/x10"
+                    android:layout_marginTop="@dimen/y10"
+                    android:textColor="#8c3322"
+                    android:textSize="@dimen/y30" />
+                <ScrollView
+                    android:id="@+id/scrollview_game_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/x10"
+                    android:focusable="true">
+                    <TextView
+                        android:id="@+id/textview_competition_message"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:textColor="#8c3322"
+                        android:textSize="@dimen/y24" />
+                </ScrollView>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_classify_game_start"
+                android:layout_width="@dimen/x472"
+                android:layout_height="@dimen/y57"
+                android:layout_marginLeft="@dimen/x154"
+                android:layout_marginTop="@dimen/y327"
+                android:background="@null" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <View
+                android:layout_width="5dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="15dp"
+                android:background="#02AFF3" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="游戏竞赛排名"
+                android:textColor="#626262"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <Button
+                android:id="@+id/image_rank_add"
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:background="@drawable/ic_arrow_left"/>
+            <TextView
+                android:id="@+id/textViewshoucount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1/6"
+                android:textSize="18sp"
+                android:textColor="#959595"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:visibility="invisible"/>
+            <Button
+                android:id="@+id/image_rank_minus"
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:background="@drawable/ic_arrow_right"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1" />
+
+    <LinearLayout
+        android:id="@+id/linear_firstuser"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y177"
+        android:layout_marginBottom="@dimen/y5"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:weightSum="1">
+
+            <Button
+                android:layout_width="@dimen/x210"
+                android:layout_height="@dimen/y55"
+                android:background="@drawable/bg_btn_right_20dp"
+                android:clickable="false"
+                android:gravity="center_vertical|right"
+                android:paddingRight="@dimen/x40"
+                android:text="NO.1"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/x260"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x95">
+
+            <com.quanmai.yiqu.common.widget.XCRoundImageView
+                android:id="@+id/imageViewHeadPortrait_game"
+                android:layout_width="@dimen/x96"
+                android:layout_height="@dimen/x96"
+                android:layout_marginLeft="@dimen/x84"
+                android:layout_marginTop="@dimen/y31"
+                android:scaleType="centerCrop"
+                android:src="@drawable/app_download"/>
+
+            <ImageView
+                android:layout_width="@dimen/x260"
+                android:layout_height="@dimen/y125"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_bottom_ranking"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="@dimen/x80"
+                android:layout_height="@dimen/y50"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/x92"
+                android:layout_marginTop="@dimen/y8"
+                android:src="@drawable/ic_crown" />
+
+            <TextView
+                android:id="@+id/textview_ranking_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/y27"
+                android:gravity="center"
+                android:maxEms="5"
+                android:singleLine="true"
+                android:text="用户名字"
+                android:textColor="@color/white"
+                android:textSize="@dimen/y22" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x35"
+            android:layout_marginTop="@dimen/y75"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/x55"
+                android:layout_height="@dimen/y55"
+                android:src="@drawable/ic_score" />
+
+            <TextView
+                android:id="@+id/textview_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x5"
+                android:text="2600"
+                android:textColor="#e7c420"
+                android:textSize="@dimen/y30" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/iv_no_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:background="@null"
+            android:gravity="center_horizontal"
+            android:text="暂无排名信息！"
+            android:textColor="#d8d8d8"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

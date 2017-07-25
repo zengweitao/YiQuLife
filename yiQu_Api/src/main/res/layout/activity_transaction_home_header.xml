@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.quanmai.yiqu.common.widget.FocusMap
+        android:id="@+id/focusmap"
+        android:layout_width="match_parent"
+        android:layout_height="120dp" />
+
+    <com.quanmai.yiqu.common.widget.DraggableGridViewPager
+        android:id="@+id/draggable_grid_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:background="@color/white"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp" />
+
+    <LinearLayout
+        android:id="@+id/lt_focus"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <com.quanmai.yiqu.ui.transaction.filterview.ExpandTabView
+        android:id="@+id/expandTabView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

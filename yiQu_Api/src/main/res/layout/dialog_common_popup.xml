@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_dialog"
+        android:minHeight="190dp"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="17.5dp"
+            android:paddingRight="17.5dp"
+            >
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="25dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/text_color_default"
+                android:textSize="18sp"
+                tools:text="Set Title"
+                />
+
+            <include layout="@layout/view_cutting_line_1px"></include>
+
+            <TextView
+                android:id="@+id/tvPhone"
+                style="@style/TextView_style"
+                android:layout_marginTop="25dp"
+                android:text="Content"
+                android:textColor="@color/text_color_4a90e2"
+                android:textSize="17sp"
+                />
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/bg_add_qrcode"
+                android:hint="请输入您的条码"
+                android:paddingLeft="5dp"
+                android:textColorHint="#979797"
+                android:textSize="16sp"
+                android:visibility="gone"
+                android:inputType="textEmailAddress"
+                />
+        </LinearLayout>
+
+        <include layout="@layout/view_cutting_line_1px"></include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/buttonCancel"
+                android:layout_width="0dp"
+                android:layout_height="49dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_btn_gray_bottom_left_radius"
+                android:text="Cancel"
+                android:textColor="#6a6a6a"
+                />
+
+            <Button
+                android:id="@+id/buttonConfirm"
+                android:layout_width="0dp"
+                android:layout_height="49dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_btn_theme_color_bottom_right_radius"
+                android:text="Confirm"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

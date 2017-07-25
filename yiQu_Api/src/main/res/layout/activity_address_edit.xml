@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.quanmai.yiqu.ui.address.AddressEditActivity">
+    <include layout="@layout/common_title_view"
+        android:id="@+id/include"></include>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pic_address"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:divider="@drawable/bg_cutting_line_left_15dp"
+        android:showDividers="middle"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/editText_address_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y90"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/x24"
+            android:hint="输入姓名"
+            android:textColor="@color/text_color_333333"
+            android:textSize="@dimen/y30" />
+
+        <EditText
+            android:id="@+id/editText_address_phone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y90"
+            android:background="@null"
+            android:hint="输入手机号"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/x24"
+            android:textSize="@dimen/y30"
+            android:textColor="@color/text_color_333333"
+            android:inputType="phone"
+            android:maxLength="11"/>
+
+        <TextView
+            android:id="@+id/textView_address_community"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y90"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/x24"
+            android:textSize="@dimen/y30"
+            android:textColor="@color/text_color_333333" />
+
+        <EditText
+            android:id="@+id/editText_address_address"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y90"
+            android:background="@null"
+            android:hint="输入详细地址"
+            android:gravity="center_vertical"
+            android:paddingLeft="13dp"
+            android:textSize="@dimen/y30"
+            android:textColor="@color/text_color_333333"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear_address_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/y50">
+        <ImageView
+            android:id="@+id/imageview_address_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_check_no"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设为默认地址"
+            android:textColor="@color/color_999999"
+            android:layout_marginLeft="@dimen/x12"
+            android:textSize="@dimen/y30"/>
+    </LinearLayout>
+
+</LinearLayout>

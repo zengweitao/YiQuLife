@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/x154"
+    android:layout_height="@dimen/x154"
+    android:background="#ffffff" >
+
+    <com.quanmai.yiqu.common.widget.XCRoundImageViewByXfermode
+        android:id="@+id/imageViewPicture_personal_grade"
+        android:layout_width="@dimen/x154"
+        android:layout_height="@dimen/x154"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/imageview_personal_grade_delete"
+        android:layout_width="@dimen/x30"
+        android:layout_height="@dimen/x30"
+        android:layout_alignParentRight="true"
+        />
+
+</RelativeLayout>
+
+
+
+<!--
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="88dp"
+    android:layout_height="88dp">
+
+    <ImageView
+        android:id="@+id/imageViewPicture_personal_grade"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/imageview_personal_grade_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_close_green"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right|top" />
+
+</FrameLayout>-->

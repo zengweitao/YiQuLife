@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <com.quanmai.yiqu.ui.transaction.filterview.TabView
+            android:id="@+id/v_1"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            layout="@layout/view_sort_child"
+            android:gravity="center" />
+
+        <View
+            android:layout_width="0.6dp"
+            android:layout_height="35dp"
+            android:background="#dedede" />
+
+        <com.quanmai.yiqu.ui.transaction.filterview.TabView
+            android:id="@+id/v_2"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            layout="@layout/view_sort_child"
+            android:gravity="center" />
+
+        <View
+            android:layout_width="0.6dp"
+            android:layout_height="35dp"
+            android:background="#dedede" />
+
+        <com.quanmai.yiqu.ui.transaction.filterview.TabView
+            android:id="@+id/v_3"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            layout="@layout/view_sort_child"
+            android:gravity="center" />
+    </LinearLayout>
+       <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="#dedede" />
+   <View
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_height="0.6dp"
+        android:background="#dedede" />
+</FrameLayout>

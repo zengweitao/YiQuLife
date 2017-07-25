@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.quanmai.yiqu.ui.booking.NotMyCommunityActivity">
+
+    <include layout="@layout/common_title_view" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1、预约服务范围仅限于安装“福二袋”终端设备的社区"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="12dp"
+        android:textSize="15sp"
+        android:textColor="#575757"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="现阶段支持上门预约回收的小区有"
+        android:textSize="17sp"
+        android:textColor="#575757"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="2、修改预约社区，需在目标社区“福二袋”终端设备上扫码取袋即可自动实现"
+        android:textSize="15sp"
+        android:textColor="#575757"
+        android:layout_marginTop="5dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="广州市：汇景新城、翠城花园"
+        android:textSize="15sp"
+        android:textColor="#575757"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="如过您所在上述小区，只需要在小区内的益趣生活领取环保袋终端上领取一次环保袋即可更改地址至您所在的小区。"
+        android:textSize="15sp"
+        android:textColor="#575757"
+        android:layout_marginTop="15dp"
+        android:visibility="gone"
+        />
+</LinearLayout>

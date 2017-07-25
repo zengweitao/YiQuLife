@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="49dp"
+    android:layout_weight="1"
+    android:background="@color/transparent"
+    android:orientation="horizontal">
+
+    <com.quanmai.yiqu.tabfragment.AlphaTabsIndicator
+        android:id="@+id/alphaIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/color_F3F4F9"
+        android:orientation="horizontal">
+
+        <com.quanmai.yiqu.tabfragment.AlphaTabView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="52.5dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            app:tabIconNormal="@drawable/homepage_main_white"
+            app:tabIconSelected="@drawable/homepage_main_green"
+            app:tabText="首页"
+            app:tabTextSize="13sp"
+            app:textColorNormal="@color/tab_text_color"
+            app:textColorSelected="@color/theme" />
+
+        <com.quanmai.yiqu.tabfragment.AlphaTabView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="52.5dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            app:tabIconNormal="@drawable/personal_main_white"
+            app:tabIconSelected="@drawable/personal_main_green"
+            app:tabText="我"
+            app:tabTextSize="13sp"
+            app:textColorNormal="@color/tab_text_color"
+            app:textColorSelected="@color/theme" />
+    </com.quanmai.yiqu.tabfragment.AlphaTabsIndicator>
+
+</RelativeLayout>

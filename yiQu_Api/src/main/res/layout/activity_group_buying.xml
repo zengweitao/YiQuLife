@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_default"
+              android:orientation="vertical"
+              tools:context="com.quanmai.yiqu.ui.Around.AroundDetailsActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:max="100"
+        android:progressDrawable="@drawable/bg_progress_bar"
+        android:visibility="gone"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <com.quanmai.yiqu.common.widget.MyScrollViewForWeb
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:id="@+id/imgBg"
+                    android:layout_width="match_parent"
+                    android:layout_height="225dp"
+                    android:background="#f2f2f2"
+                    android:scaleType="centerCrop"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5px"
+                    android:background="#cdcdcd"/>
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:id="@+id/tvTagAndDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textColor="#979797"
+                        android:textSize="11sp"
+                        tools:text="周边优惠  |  04-16"
+                        />
+
+                    <ImageView
+                        android:layout_width="13.5dp"
+                        android:layout_height="10dp"
+                        android:background="@drawable/around_details_eye_bg"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvBrowseCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="#979797"
+                        android:textSize="11sp"
+                        tools:text="188"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvGoodTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textColor="#454545"
+                    android:textSize="17sp"
+                    tools:text="Calvin Klein Mercury East-West 女款真皮手提斜挎包团购"
+                    />
+
+                <TextView
+                    android:id="@+id/tvDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:singleLine="true"
+                    android:textColor="#fe5246"
+                    android:textSize="14sp"
+                    tools:text="原价900元现价694元，300人团购开团"
+                    />
+
+                <include layout="@layout/view_cutting_line_1px"></include>
+
+                <include layout="@layout/view_cutting_line_5dp"></include>
+                <!--商家简介-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="15dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/tvShopName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_color_default"
+                        android:textSize="16sp"
+                        tools:text="Calvin Klein专卖店"
+                        android:layout_marginRight="50dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvShopAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvShopName"
+                        android:layout_marginTop="5dp"
+                        android:maxLines="3"
+                        android:textColor="@color/text_color_979797"
+                        android:textSize="12sp"
+                        tools:text="广东省广州市海珠区新港西路146号"
+                        android:layout_marginRight="50dp"
+                        />
+
+                    <ImageView
+                        android:id="@+id/imgPhoneCall"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/ic_phone"
+                        />
+
+                </RelativeLayout>
+
+                <include layout="@layout/view_cutting_line_1px"></include>
+
+                <include layout="@layout/view_cutting_line_5dp"></include>
+
+                <WebView
+                    android:id="@+id/webView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </WebView>
+            </LinearLayout>
+
+        </com.quanmai.yiqu.common.widget.MyScrollViewForWeb>
+
+        <!--返回键-->
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/around_details_round_back"
+            />
+
+        <!--分享键-->
+        <ImageView
+            android:id="@+id/imgShare"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/around_details_round_share"
+            />
+
+        <!--标题栏-->
+        <RelativeLayout
+            android:id="@+id/relativeBar"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@color/theme"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:text="优惠详情"
+                />
+
+            <ImageView
+                android:id="@+id/imgScrollBack"
+                android:layout_width="44dp"
+                android:layout_height="39dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/bg_btn_transparent"
+                android:onClick="finish"
+                android:paddingBottom="9dp"
+                android:paddingLeft="15.5dp"
+                android:paddingRight="15.5dp"
+                android:paddingTop="9dp"
+                android:src="@drawable/arrow_left_white"/>
+
+            <ImageView
+                android:id="@+id/imgScrollShare"
+                android:layout_width="44dp"
+                android:layout_height="39dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/bg_btn_transparent"
+                android:paddingBottom="9dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="9dp"
+                android:src="@drawable/around_show_coupon_share_bg"
+                />
+        </RelativeLayout>
+
+        <!--底部菜单-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_stroke_top_1px"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:text="团购价："
+                android:textColor="@color/text_color_default"
+                android:textSize="18sp"
+                />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tvGroupPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="#FE5246"
+                    tools:text="￥694"
+                    tools:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tvOriPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tvGroupPrice"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="19dp"
+                    android:layout_toRightOf="@+id/tvGroupPrice"
+                    android:text="￥900"
+                    android:textColor="#B4B4B4"
+                    android:textSize="12sp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlApply"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_marginTop="1px"
+                android:background="@color/theme"
+                >
+
+                <TextView
+                    android:id="@+id/tvApply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    tools:text="团购报名"/>
+
+                <TextView
+                    android:id="@+id/tvApplyNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvApply"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="2dp"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    tools:text="248人已报名"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

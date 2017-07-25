@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/color_bg"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        >
+
+        <com.quanmai.yiqu.common.widget.XCRoundImageView
+            android:id="@+id/imageViewHeadPortrait"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="15dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            >
+
+            <RelativeLayout
+                android:id="@+id/linearHead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:orientation="horizontal"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="60dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/textViewName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:textColor="#575757"
+                        android:textSize="17sp"
+                        tools:text="大菠萝大菠萝大菠萝大菠萝大菠萝"
+                        />
+
+                    <Button
+                        android:id="@+id/tvLevel"
+                        android:layout_width="23dp"
+                        android:layout_height="12dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/bg_button_orange"
+                        android:gravity="center"
+                        android:text="LV1"
+                        android:textColor="@color/white"
+                        android:textSize="8sp"
+                        />
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/textViewCommentCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/theme"
+                    android:gravity="center"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:textColor="#ffffff"
+                    android:textSize="11sp"
+                    tools:text="999+评论"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textViewTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearHead"
+                android:layout_marginTop="5dp"
+                android:textColor="#979797"
+                android:textSize="12sp"
+                tools:text="发布时间：2016.03.12"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44.6dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10.4dp"
+        android:background="@drawable/detail_address_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        >
+
+        <TextView
+            android:id="@+id/textViewMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:textColor="#fe5246"
+            android:textSize="18sp"
+            tools:text="46"
+            />
+
+        <TextView
+            android:id="@+id/textViewDegree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:textColor="#979797"
+            android:textSize="18sp"
+            tools:text="9成新"
+            />
+        <TextView
+            android:id="@+id/textViewAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="怡景花园"
+            android:textSize="18sp"
+            android:textColor="#979797"
+            android:layout_marginLeft="15dp"
+            android:singleLine="true"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewDesciption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#575757"
+        android:textSize="15sp"
+        tools:text="比较有意思的书，总结企业过失的案例，值得看看学习一下，书还很新，没有破损。"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="4dp"
+        android:orientation="vertical"
+        >
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/color_bg"
+        />
+
+
+</LinearLayout>

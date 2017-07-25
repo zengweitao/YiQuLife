@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.quanmai.yiqu.ui.mys.realname.AddressChoiceRoomActivity">
+
+    <include layout="@layout/common_title_view"></include>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/flSearch"
+        android:background="@color/color_f4f4f4">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y70"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x30"
+            android:layout_marginTop="@dimen/y20"
+            android:layout_marginBottom="@dimen/y20"
+            android:focusableInTouchMode="true"
+            android:background="@drawable/bg_white_radius_15dp">
+
+            <EditText
+                android:id="@+id/edtSearchContent"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y70"
+                android:background="@drawable/bg_btn_white_radius_10px"
+                android:hint="请输入关键字搜索"
+                android:imeOptions="actionSearch"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:inputType="text"
+                android:textColor="#6c6c6c"
+                android:textColorHint="#cccccc"
+                android:textSize="14sp"
+                android:drawableLeft="@drawable/ic_search_address" />
+
+            <ImageView
+                android:id="@+id/imgClear"
+                android:layout_width="@dimen/y70"
+                android:layout_height="@dimen/y70"
+                android:padding="@dimen/x17"
+                android:layout_marginRight="@dimen/x5"
+                android:src="@drawable/ic_clear_search"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/btnSearch"
+                android:layout_toStartOf="@+id/btnSearch" />
+            <Button
+                android:id="@+id/btnSearch"
+                android:layout_width="@dimen/x110"
+                android:layout_height="@dimen/y70"
+                android:padding="7dp"
+                android:background="@drawable/btn_search"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y90"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/white">
+        <LinearLayout
+            android:id="@+id/llridgepole"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/tvridgepole"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="栋"
+                android:textSize="@dimen/y34" />
+            <ImageView
+                android:id="@+id/ivridgepole"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_green_bottom"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="@dimen/x2"
+            android:layout_height="@dimen/y60"
+            android:background="@color/divide_qian"/>
+        <LinearLayout
+            android:id="@+id/llunit"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/tvunit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="单元"
+                android:textSize="@dimen/y34"/>
+            <ImageView
+                android:id="@+id/ivunit"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_gray_right"/>
+        </LinearLayout>
+        <View
+            android:layout_width="@dimen/x2"
+            android:layout_height="@dimen/y60"
+            android:background="@color/divide_qian"/>
+        <LinearLayout
+            android:id="@+id/llroom"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/tvroom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="房间号"
+                android:textSize="@dimen/y34"/>
+            <ImageView
+                android:id="@+id/ivroom"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_gray_right"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y2"
+        android:background="@color/color_f4f4f4"/>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/pull_to_refresh_choice_room"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null">
+
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y2"
+        android:background="@color/divide_qian"/>
+
+</LinearLayout>

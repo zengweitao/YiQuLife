@@ -1,0 +1,125 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/fragment"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_default"
+              android:orientation="vertical"
+    >
+
+    <include layout="@layout/common_title_view"></include>
+
+    <RadioGroup
+        android:id="@+id/radioGroupTab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_f9f9f9"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:id="@+id/llUnreceived"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tvUnreceivedNum"
+                style="@style/TextView_style"
+                android:layout_marginTop="10dp"
+                android:text="0"
+                android:textColor="@color/recycler_tab_text_select_color"
+                android:textSize="24sp"
+                />
+
+            <TextView
+                android:id="@+id/tvUnreceived"
+                style="@style/TextView_style"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/str_unreceived"
+                android:textColor="@color/recycler_tab_text_select_color"
+                android:textSize="17sp"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="7.5dp"
+            android:layout_marginTop="7.5dp"
+            android:background="@color/text_color_cdcdcd"
+            ></View>
+
+        <LinearLayout
+            android:id="@+id/llNotTake"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tvNotTakeNum"
+                style="@style/TextView_style"
+                android:layout_marginTop="10dp"
+                android:text="0"
+                android:textColor="@color/recycler_tab_text_select_color"
+                android:textSize="24sp"
+                />
+
+            <TextView
+                android:id="@+id/tvNotTake"
+                style="@style/TextView_style"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/str_not_take"
+                android:textColor="@color/recycler_tab_text_select_color"
+                android:textSize="17sp"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="7.5dp"
+            android:layout_marginTop="7.5dp"
+            android:background="@color/text_color_cdcdcd"
+            ></View>
+
+        <LinearLayout
+            android:id="@+id/llFinished"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tvFinishedNum"
+                style="@style/TextView_style"
+                android:layout_marginTop="10dp"
+                android:text="0"
+                android:textColor="@color/recycler_tab_text_select_color"
+                android:textSize="24sp"
+                />
+
+            <TextView
+                android:id="@+id/tvFinished"
+                style="@style/TextView_style"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/str_finished"
+                android:textColor="@color/recycler_tab_text_select_color"
+                android:textSize="17sp"
+                />
+        </LinearLayout>
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPagerOrder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></android.support.v4.view.ViewPager>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <com.quanmai.yiqu.common.widget.CheckableRelativeLayout
+        android:id="@+id/rlCatalog"
+        android:layout_width="90dp"
+        android:layout_height="49dp"
+        android:background="@drawable/bg_coupon_catalog_checked"
+        app:checked="false">
+
+        <TextView
+            android:id="@+id/tvCatalogName"
+            style="@style/TextView_style"
+            android:layout_centerInParent="true"
+            android:textSize="15sp"
+            tools:text="特色美食"
+            />
+    </com.quanmai.yiqu.common.widget.CheckableRelativeLayout>
+
+</RelativeLayout>

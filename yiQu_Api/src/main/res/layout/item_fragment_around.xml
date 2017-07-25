@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/ivThumbnail"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginRight="5dp"
+                android:scaleType="centerCrop"
+                tools:background="@drawable/ic_launcher"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/ivThumbnail"
+                >
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    style="@style/TextView_style"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:singleLine="false"
+                    android:textSize="16sp"
+                    tools:text="“和谐邻里，幸福社区”活动"/>
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tvDescribed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="57.5dp"
+                android:layout_toRightOf="@+id/ivThumbnail"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/text_color_F36C60"
+                android:textSize="14sp"
+                tools:text="华阳小区周边住户均可报名"/>
+
+            <TextView
+                android:id="@+id/tvTag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="85dp"
+                android:layout_toRightOf="@+id/ivThumbnail"
+                android:textColor="@color/text_color_979797"
+                android:textSize="11sp"
+                tools:text="亲子活动  |  04-16"/>
+
+            <ImageView
+                android:layout_width="13.5dp"
+                android:layout_height="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="87dp"
+                android:layout_toLeftOf="@+id/tvBrowseTimes"
+                android:background="@drawable/icon_browse"/>
+
+            <TextView
+                android:id="@+id/tvBrowseTimes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="85dp"
+                android:textColor="@color/text_color_979797"
+                android:textSize="11sp"
+                tools:text="274"/>
+
+            <RelativeLayout
+                android:id="@+id/rlSpecial"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/bg_special"
+                android:visibility="gone"
+                >
+
+                <com.quanmai.yiqu.common.widget.RotateTextView
+                    android:id="@+id/tvSpecialName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="1.5dp"
+                    android:layout_marginTop="1.5dp"
+                    android:maxEms="2"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="7sp"
+                    tools:text="专题"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_listview_item_transparent"
+            />
+    </FrameLayout>
+
+
+</RelativeLayout>
